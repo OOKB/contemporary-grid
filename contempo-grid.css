@@ -122,7 +122,7 @@ small,
   text-align: left;
 }
 
-img { max-width: 100%; };
+img { max-width: 100%; }
 
 /** Base 2 column grid **/
 /* Visibility Classes */
@@ -217,10 +217,12 @@ img { max-width: 100%; };
   margin: 0 0 2rem 0;
 }
 
+/* columnar stuff */
 .column,
 .columns {
+  float: left;
   margin: 0 0 2rem 0;
-  padding: 0;
+  padding: 0 1rem;
 }
 
 /* Start of the Grid
@@ -237,18 +239,18 @@ img { max-width: 100%; };
 .four,
 .five,
 .six,
-.halfwidth,
+.halfwidth     { width: 50%; }
 .seven,
 .eight,
 .nine,
 .ten,
 .eleven,
 .twelve,
-.fullwidth    { width: calc(100% / 12 * 12); }
+.fullwidth    { width: 100%; }
 /*everything goes full width on skinny viewports */
 
-
-@media (min-width: 20em;) {
+/** MD **/
+@media (min-width: 481px) {
   /** 4 column grid changeup **/
   #wrapper,
   .wrapper,
@@ -258,13 +260,60 @@ img { max-width: 100%; };
     min-width: 30rem;
     width: 80%;
   }
+
+  /* the Grid
+  ===========================================*/
+  /*
+    widths are set using CSS calc() function
+    width: calc(100% / x * y);
+    where x = #of columns total, and y = #of columns the class crosses.
+    by default this has been set as a 12 column grid, so x = 12.
+    y matches numerically the class number.
+  */
+  .one                   { width: calc(100% / 12 * 03); }
+  .two                   { width: calc(100% / 12 * 03); }
+  .three                 { width: calc(100% / 12 * 03); }
+  .four                  { width: calc(100% / 12 * 06); }
+  .five                  { width: calc(100% / 12 * 06); }
+  .six, .halfwidth       { width: calc(100% / 12 * 06); }
+  .seven                 { width: calc(100% / 12 * 09); }
+  .eight                 { width: calc(100% / 12 * 09); }
+  .nine                  { width: calc(100% / 12 * 09); }
+  .ten                   { width: calc(100% / 12 * 12); }
+  .eleven                { width: calc(100% / 12 * 12); }
+  .twelve, .fullwidth    { width: calc(100% / 12 * 12); }
+
 }
 
-@media (min-width: 40em;) {
+/** LG **/
+@media (min-width: 1000px) {
   /** 6 column grid changeup **/
+
+  /* the Grid
+  ===========================================*/
+  /*
+    widths are set using CSS calc() function
+    width: calc(100% / x * y);
+    where x = #of columns total, and y = #of columns the class crosses.
+    by default this has been set as a 12 column grid, so x = 12.
+    y matches numerically the class number.
+  */
+  .one                   { width: calc(100% / 12 * 02); }
+  .two                   { width: calc(100% / 12 * 02); }
+  .three                 { width: calc(100% / 12 * 04); }
+  .four                  { width: calc(100% / 12 * 04); }
+  .five                  { width: calc(100% / 12 * 06); }
+  .six, .halfwidth       { width: calc(100% / 12 * 06); }
+  .seven                 { width: calc(100% / 12 * 08); }
+  .eight                 { width: calc(100% / 12 * 08); }
+  .nine                  { width: calc(100% / 12 * 10); }
+  .ten                   { width: calc(100% / 12 * 10); }
+  .eleven                { width: calc(100% / 12 * 12); }
+  .twelve, .fullwidth    { width: calc(100% / 12 * 12); }
 }
 
-@media (min-width: 60em;) {
+/** XL **/
+@media (min-width: 1200px) {
   /** 12 column grid changeup **/
 
   #wrapper,
@@ -281,13 +330,6 @@ img { max-width: 100%; };
     margin: 0 -1rem 2rem -1rem;
   }
 
-  /* columnar stuff */
-  .column,
-  .columns {
-    float: left;
-    margin: 0 0 2rem 0;
-    padding: 0 1rem;
-  }
 
   /* the Grid
   ===========================================*/
@@ -346,7 +388,6 @@ img { max-width: 100%; };
     display: none;
     visibility: hidden;
   }
-
 
 }
 
