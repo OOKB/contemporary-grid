@@ -122,7 +122,7 @@ small,
   text-align: left;
 }
 
-img { max-width: 100%; };
+img { max-width: 100%; }
 
 /** Base 2 column grid **/
 /* Visibility Classes */
@@ -217,10 +217,12 @@ img { max-width: 100%; };
   margin: 0 0 2rem 0;
 }
 
+/* columnar stuff */
 .column,
 .columns {
+  float: left;
   margin: 0 0 2rem 0;
-  padding: 0;
+  padding: 0 1rem;
 }
 
 /* Start of the Grid
@@ -237,30 +239,15 @@ img { max-width: 100%; };
 .four,
 .five,
 .six,
-.halfwidth,
+.halfwidth     { width: 50%; }
 .seven,
 .eight,
 .nine,
 .ten,
 .eleven,
 .twelve,
-.fullwidth    { width: calc(100% / 12 * 12); }
+.fullwidth    { width: 100%; }
 /*everything goes full width on skinny viewports */
-
-
-/*Connor's test of the column system we set up*/
-
-.container {
-  background-image: url(https://images.unsplash.com/photo-1443527216320-7e744084f5a7?ixlib=rb-0.3.5&q=80&fm=jpg&s=6fbde3ee76bc8f49caf14c89778b2210);
-  overflow: hidden;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 80%; 
-  width: 100%;
-  float: left;
-}
 
 @media (min-width: 40em;) {
   /** 4 column grid changeup **/
@@ -272,13 +259,64 @@ img { max-width: 100%; };
     min-width: 30rem;
     width: 80%;
   }
+
+  /* the Grid
+  ===========================================*/
+  /*
+    widths are set using CSS calc() function
+    width: calc(100% / x * y);
+    where x = #of columns total, and y = #of columns the class crosses.
+    by default this has been set as a 12 column grid, so x = 12.
+    y matches numerically the class number.
+  */
+  .one                   { width: calc(100% / 12 * 03); }
+  .two                   { width: calc(100% / 12 * 03); }
+  .three                 { width: calc(100% / 12 * 03); }
+  .four                  { width: calc(100% / 12 * 06); }
+  .five                  { width: calc(100% / 12 * 06); }
+  .six, .halfwidth       { width: calc(100% / 12 * 06); }
+  .seven                 { width: calc(100% / 12 * 09); }
+  .eight                 { width: calc(100% / 12 * 09); }
+  .nine                  { width: calc(100% / 12 * 09); }
+  .ten                   { width: calc(100% / 12 * 12); }
+  .eleven                { width: calc(100% / 12 * 12); }
+  .twelve, .fullwidth    { width: calc(100% / 12 * 12); }
+
 }
 
 @media (min-width: 60em;) {
+
   /** 6 column grid changeup **/
+
+  /* the Grid
+  ===========================================*/
+  /*
+    widths are set using CSS calc() function
+    width: calc(100% / x * y);
+    where x = #of columns total, and y = #of columns the class crosses.
+    by default this has been set as a 12 column grid, so x = 12.
+    y matches numerically the class number.
+  */
+  .one                   { width: calc(100% / 12 * 02); }
+  .two                   { width: calc(100% / 12 * 02); }
+  .three                 { width: calc(100% / 12 * 04); }
+  .four                  { width: calc(100% / 12 * 04); }
+  .five                  { width: calc(100% / 12 * 06); }
+  .six, .halfwidth       { width: calc(100% / 12 * 06); }
+  .seven                 { width: calc(100% / 12 * 08); }
+  .eight                 { width: calc(100% / 12 * 08); }
+  .nine                  { width: calc(100% / 12 * 10); }
+  .ten                   { width: calc(100% / 12 * 10); }
+  .eleven                { width: calc(100% / 12 * 12); }
+  .twelve, .fullwidth    { width: calc(100% / 12 * 12); }
 }
 
+<<<<<<< HEAD
 @media (min-width: 80em;) {
+=======
+/** XL **/
+@media (min-width: 1200px) {
+>>>>>>> origin/master
   /** 12 column grid changeup **/
 
   #wrapper,
@@ -295,13 +333,6 @@ img { max-width: 100%; };
     margin: 0 -1rem 2rem -1rem;
   }
 
-  /* columnar stuff */
-  .column,
-  .columns {
-    float: left;
-    margin: 0 0 2rem 0;
-    padding: 0 1rem;
-  }
 
   /* the Grid
   ===========================================*/
@@ -360,7 +391,6 @@ img { max-width: 100%; };
     display: none;
     visibility: hidden;
   }
-
 
 }
 
@@ -426,6 +456,36 @@ img { max-width: 100%; };
 
 
 
+/**
+These are some styles related to the crazy homepage solution Connor and Kristian are developing
+**/
+
+    /*** testing an idea ***/
+    .imged {
+        background-image: url('https://unsplash.it/200/300/?random');
+        background-size: cover;
+        /**/
+        width: 100%;
+        height: 0;
+        padding-bottom: 60%;
+    }
+    
+    .imged a {
+        text-decoration: none;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /**/
+        color: inherit;
+    }
+    .imged a:hover {
+        background: rgba(200,250,200,.75);
+    }
 
 
 
