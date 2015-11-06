@@ -248,7 +248,21 @@ img { max-width: 100%; };
 /*everything goes full width on skinny viewports */
 
 
-@media (min-width: 20em;) {
+/*Connor's test of the column system we set up*/
+
+.container {
+  background-image: url(https://images.unsplash.com/photo-1443527216320-7e744084f5a7?ixlib=rb-0.3.5&q=80&fm=jpg&s=6fbde3ee76bc8f49caf14c89778b2210);
+  overflow: hidden;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 80%; 
+  width: 100%;
+  float: left;
+}
+
+@media (min-width: 40em;) {
   /** 4 column grid changeup **/
   #wrapper,
   .wrapper,
@@ -260,11 +274,11 @@ img { max-width: 100%; };
   }
 }
 
-@media (min-width: 40em;) {
+@media (min-width: 60em;) {
   /** 6 column grid changeup **/
 }
 
-@media (min-width: 60em;) {
+@media (min-width: 80em;) {
   /** 12 column grid changeup **/
 
   #wrapper,
