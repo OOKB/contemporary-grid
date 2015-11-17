@@ -311,12 +311,8 @@ img { max-width: 100%; }
   .twelve, .fullwidth    { width: calc(100% / 12 * 12); }
 }
 
-<<<<<<< HEAD
-@media (min-width: 80em;) {
-=======
 /** XL **/
 @media (min-width: 1200px) {
->>>>>>> origin/master
   /** 12 column grid changeup **/
 
   #wrapper,
@@ -460,32 +456,37 @@ img { max-width: 100%; }
 These are some styles related to the crazy homepage solution Connor and Kristian are developing
 **/
 
-    /*** testing an idea ***/
-    .imged {
-        background-image: url('https://unsplash.it/200/300/?random');
-        background-size: cover;
-        /**/
-        width: 100%;
-        height: 0;
-        padding-bottom: 60%;
-    }
-    
-    .imged a {
-        text-decoration: none;
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        /**/
-        color: inherit;
-    }
-    .imged a:hover {
-        background: rgba(200,250,200,.75);
-    }
+/*** testing an idea ***/
+.imged {
+  background-image: url('img/tile_1.jpg');
+  background-size: cover;
+  /**/
+  width: 100%;
+  height: 0;
+  padding-bottom: 60%;
+  overflow: hidden;
+}
+
+.imged.other {
+  background-image: url('img/tile_2.jpg');
+}
+
+.imged a {
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /**/
+  color: inherit;
+}
+.imged a:hover {
+  background: rgba(200,250,200,.75);
+}
 
 
 
