@@ -328,6 +328,8 @@ img { max-width: 100%; }
   .row {
     margin: 0 -1rem 2rem -1rem;
   }
+    
+  
 
 
   /* the Grid
@@ -457,17 +459,45 @@ These are some styles related to the crazy homepage solution Connor and Kristian
 **/
 
 /*** testing an idea ***/
+
 .imged {
-  background-image: url('img/tile_1.jpg');
+  background-color: bisque;
   background-size: cover;
   /**/
   width: 100%;
   height: 0;
   padding-bottom: 60%;
   overflow: hidden;
+  -moz-box-shadow: inset  0  80px 80px -80px #000000, inset  0 -80px 80px -80px #000000;
+  -webkit-box-shadow: inset  0  80px 80px -80px #000000, inset  0 -80px 80px -80px #000000;
+  box-shadow: inset  0  80px 80px -80px #000000, inset  0 -80px 80px -80px #000000;
+}
+.imged.one {
+  background-image: url('img/tile_3.jpg');
 }
 
-.imged.other {
+.imged.two {
+  background-color: bisque;
+  background-image: url('img/tile_5.gif');
+}
+
+.imged.three {
+  background-color: bisque;
+  background-image: url('img/tile_6.jpg'); 
+}
+
+.imged.four {
+  background-color: bisque;
+  background-image: url('img/tile_4.jpg');
+}
+
+.imged.five {
+/*  background-color: bisque;*/
+  background-image: url('img/tile_1.jpg');
+}
+
+.imged.six {
+/*  background-color: bisque;*/
   background-image: url('img/tile_2.jpg');
 }
 
@@ -488,11 +518,72 @@ These are some styles related to the crazy homepage solution Connor and Kristian
   background: rgba(200,250,200,.75);
 }
 
+/*XL*/
 
+.twelve.columns .bigBlock h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 60px;
+  padding-top: 3%;
+  padding-left: 3%;
+}
 
+.twelve.columns .bigBlock p {
+  color: white;    
+  font-size: 16px;
+  padding-left: 75%;
+  padding-top: 40%;
+}
 
+/*L*/
 
+.six.columns .bigBlock h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 36px;
+  padding-top: 6%;
+  padding-left: 6%;
+}
 
+.six.columns .bigBlock p {
+  color: white;    
+  font-size: 16px;
+  padding-left: 66%;
+  padding-top: 30%;
+}
+
+/*M*/
+
+.four.columns .bigBlock h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 24px;
+  padding-top: 9%;
+  padding-left: 9%;
+}
+
+.four.columns .bigBlock p {
+  color: white;    
+  font-size: 16px;
+  padding-left: 50%;
+  padding-top: 20%;
+}
+
+/*S*/
+
+.two.columns .bigBlock h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 24px;
+  padding-top: 9%;
+  padding-left: 9%;
+}
+
+.two.columns .bigBlock p {
+  color: white;    
+  font-size: 16px;
+  padding-left: 9%;
+}
 
 
 /**
