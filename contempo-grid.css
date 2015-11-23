@@ -239,7 +239,7 @@ img { max-width: 100%; }
 .four,
 .five,
 .six,
-.halfwidth     { width: 50%; }
+.halfwidth,
 .seven,
 .eight,
 .nine,
@@ -249,7 +249,7 @@ img { max-width: 100%; }
 .fullwidth    { width: 100%; }
 /*everything goes full width on skinny viewports */
 
-@media (min-width: 40em;) {
+@media (min-width: 40em) {
   /** 4 column grid changeup **/
   #wrapper,
   .wrapper,
@@ -284,7 +284,7 @@ img { max-width: 100%; }
 
 }
 
-@media (min-width: 60em;) {
+@media (min-width: 60em) {
 
   /** 6 column grid changeup **/
 
