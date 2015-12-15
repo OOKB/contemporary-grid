@@ -31,7 +31,7 @@ a.main-link {
 }
 
 #main-menu-wrap:hover a.main-link {
-  color: rgba(26,42,53,.33);
+  color: rgba(26,42,53,.44);
 }
 
 .evenly-spread a.main-link {
@@ -44,6 +44,7 @@ a.main-link {
   padding-bottom: .5em;
 }
 
+#main-menu-wrap .evenly-spread:hover a.main-link,
 #main-menu-wrap .evenly-spread a.main-link:hover {
   background: rgba(26,42,53,1);
   color: white;
@@ -72,11 +73,37 @@ a.main-link {
 
 /**/
 
+.sub-menu > li {
+  display: block;
+}
+.sub-menu > li p {
+  margin-bottom: 0;
+}
+
 .sub-menu > li .secondary {
+  background: white;
+  border-left: 3px solid rgba(241,97,74,1);
   display: none;
   position: absolute;
-  right: 0;
+  margin-left: calc(100% / 12 * 04 - .75em - 3px);
+  padding-top:.25em;
+  padding-left: .5em;
+  padding-bottom: .5em;
 }
 .sub-menu > li:hover .secondary {
   display: block;
+}
+
+a.sub-link {
+  color: rgba(0,75,124,1);
+  display: block;
+  padding:.5em .25em .4em;
+  text-decoration: none;
+  font-size: 112.5%;
+}
+
+.sub-menu > li:hover .sub-link,
+a.sub-link:hover {
+  background: rgba(241,97,74,1);
+  color:white;
 }
