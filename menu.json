@@ -39,6 +39,26 @@
           "secondary": "We are bolstered by an eighteen-person Board of Trustees. They oversee every aspect of the organization and come from various disciplines including the arts, humanities, education, medicine, law, public policy, and more."
         }
       ]
+    },
+    {
+      "mainlink": "Programs",
+      "primary": "The Contemporary focuses on three main program areas: Projects, Speaker Series, and <em>Scroll</em>."
+    },
+    {
+      "mainlink": "Resources",
+      "primary": "The Contemporary offers an array of resources for artists in our area including access to Workspace, Studio Visits, Equipment Library, Art Retreat, and Grit Fund—some resources are only available to our members. <br/><br/> <a href='#'>Become a Member.</a>"
+    },
+    {
+      "mainlink": "Support",
+      "primary": "The Contemporary is funded through the generosity of our Board of Trustees, as well as foundations, government agencies, corporations, partner institutions, and individuals."
+    },
+    {
+      "mainlink": "Shop",
+      "primary": ""
+    },
+    {
+      "mainlink": "Contact",
+      "primary": ""
     }
   ]
 }

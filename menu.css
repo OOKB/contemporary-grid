@@ -1,8 +1,16 @@
+#main-menu-wrap {
+  position: relative;
+  /**/
+  border-width: 3px;
+  border-top-style: solid ;
+  border-bottom-style: solid ;
+}
+
 .evenly-spread {
   width: calc(100% / 7);
   display: block;
   float: left;
-  position: relative;
+  position: static;
 }
 
 .evenly-spread a.main-link {
@@ -11,6 +19,8 @@
   font-size: 125%;
   font-weight: 900;
   text-align: center;
+  padding-top: .5em;
+  padding-bottom: .5em;
 }
 
 .evenly-spread a.main-link:hover {
@@ -21,9 +31,14 @@
 /**/
 .drawer {
   position: absolute;
+  left: 0;
+  right:0;
   background: white;
   z-index: 9;
   display: none;
+  margin-top: 3px;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .evenly-spread:hover .drawer {
