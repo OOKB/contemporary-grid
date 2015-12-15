@@ -1,3 +1,13 @@
+/*** Colors ***/
+/*
+  red           rgba(241,97,74,1)
+  orange        rgba(255,117,44,1)
+  yellow        rgba(255,234,58,1)
+  light green   rgba(201,222,121,1)
+  dark green    rgba(40,109,76,1)
+  blue          rgba(0,75,124,1)
+  dark blue     rgba(26,42,53,1)
+*/
 
 /********/
 
@@ -37,7 +47,7 @@ body {
   font-weight: 400;
   /* do I want a better, wider ranging font-stack? */
   font-family: Balto, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: black;
+  color: rgba(26,42,53,1);
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
@@ -64,13 +74,11 @@ h6 { font-size: 1.33rem; }
 p {
   margin-top: 0;
   margin-bottom: 1em;
-  line-height: normal;
 }
 
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
-  line-height: normal;
 }
 
 ul {
@@ -213,22 +221,28 @@ img { max-width: 100%; }
 .wrapper,
 .container {
   margin: 0 auto;
-  padding: 0 1rem 2rem 1rem;
+  padding: 0 .75rem 1.5rem .75rem;
   width: 100%;
+}
+
+header #wrapper,
+header .wrapper,
+header .container {
+  padding-bottom: 0;
 }
 
 .group,
 .grouped,
 .row {
-  margin: 0 0 2rem 0;
+  margin: 0;
 }
 
 /* columnar stuff */
 .column,
 .columns {
   float: left;
-  margin: 0 0 2rem 0;
-  padding: 0 1rem;
+  margin: 0 0 1.5rem 0;
+  padding: 0 .75rem;
 }
 
 /* Start of the Grid
@@ -260,8 +274,6 @@ img { max-width: 100%; }
   #wrapper,
   .wrapper,
   .container {
-    margin: 0 auto;
-    padding-bottom: 2rem;
     min-width: 30rem;
     width: 80%;
   }
@@ -318,25 +330,20 @@ img { max-width: 100%; }
 }
 
 /** XL **/
-@media (min-width: 1200px) {
+@media (min-width: 75rem) {
   /** 12 column grid changeup **/
 
   #wrapper,
   .wrapper,
   .container {
-    margin: 0 auto;
-    padding-bottom: 2rem;
     max-width: 75rem;
   }
 
   .group,
   .grouped,
   .row {
-    margin: 0 -1rem 2rem -1rem;
+    margin: 0 -.75rem;
   }
-
-
-
 
   /* the Grid
   ===========================================*/
@@ -465,7 +472,7 @@ These are some styles related to the crazy homepage solution Connor and Kristian
 /*** testing an idea ***/
 
 .imged {
-  background-color: bisque;
+  background-color: rgba(255,234,188,1);
   background-size: cover;
   width: 100%;
   height: 0;
@@ -474,7 +481,7 @@ These are some styles related to the crazy homepage solution Connor and Kristian
 }
 
 .imged a {
-  background: rgba(0,0,0,.05);
+  background: rgba(26,42,53,.075);
   text-decoration: none;
   display: block;
   position: absolute;
@@ -487,7 +494,7 @@ These are some styles related to the crazy homepage solution Connor and Kristian
   color: inherit;
 }
 .imged a:hover {
-  background: rgba(0,0,0,.33);
+  background: rgba(26,42,53,.5);
 }
 .imged.one {
   background-image: url('img/tile_3.jpg');

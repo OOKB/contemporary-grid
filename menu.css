@@ -1,3 +1,14 @@
+/*** Colors ***/
+/*
+  red           rgba(241,97,74,1)
+  orange        rgba(255,117,44,1)
+  yellow        rgba(255,234,58,1)
+  light green   rgba(201,222,121,1)
+  dark green    rgba(40,109,76,1)
+  blue          rgba(0,75,124,1)
+  dark blue     rgba(26,42,53,1)
+*/
+
 #main-menu-wrap {
   position: relative;
   /**/
@@ -13,6 +24,16 @@
   position: static;
 }
 
+a.main-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgba(26,42,53,1);
+}
+
+#main-menu-wrap:hover a.main-link {
+  color: rgba(26,42,53,.33);
+}
+
 .evenly-spread a.main-link {
   display: block;
   width: 100%;
@@ -23,8 +44,8 @@
   padding-bottom: .5em;
 }
 
-.evenly-spread a.main-link:hover {
-  background: black;
+#main-menu-wrap .evenly-spread a.main-link:hover {
+  background: rgba(26,42,53,1);
   color: white;
 }
 
@@ -36,11 +57,26 @@
   background: white;
   z-index: 9;
   display: none;
-  margin-top: 3px;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  border-top: 3px solid rgba(26,42,53,1);
+  padding-top: 1.5em;
+  padding-bottom: 0;
 }
 
 .evenly-spread:hover .drawer {
+  display: block;
+}
+
+.drawer .blurb {
+  line-height: 1.5em;
+}
+
+/**/
+
+.sub-menu > li .secondary {
+  display: none;
+  position: absolute;
+  right: 0;
+}
+.sub-menu > li:hover .secondary {
   display: block;
 }
