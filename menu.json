@@ -1,0 +1,44 @@
+{
+  "menu": [
+    {
+      "mainlink": "Visit",
+      "primary": "M-TH, 11am-4pm <br/>by appointment only.",
+      "sublink": [
+        {
+          "title": "Studio",
+          "secondary": "We are a nomadic, non-collecting museum without a permanent collection or exhibition space. Visitors are always welcome to stop by our working studio and headquarters to learn more about the museum and past projects."
+        },
+        {
+          "title": "Calendar",
+          "secondary": "We host regular openings, events, and lectures. Join our mailing list for updates."
+        }
+      ]
+    },
+    {
+      "mainlink": "About",
+      "primary": "The Contemporary is a nomadic, non-collecting art museum in Baltimore, MD.",
+      "sublink": [
+        {
+          "title": "Mission",
+          "secondary": "We are committed to redefining the concept of a museum to be open, inclusive, and available to all. Our work is inspired by three guiding principles: <em>artists matter</em>, <em>collaboration is key</em>, and <em>audience is everywhere</em>."
+        },
+        {
+          "title": "History",
+          "secondary": "Founded in 1989 as a nomadic institution, we were established in order to foster meaningful exchanges between artists, institutions, and diverse audiences. We’ve been dedicated to ‘redefining the concept of a museum’ ever since."
+        },
+        {
+          "title": "Staff",
+          "secondary": "We are run by a five-person staff including a Director, Program Manager, Business Manager, Advancement Manager, and Outreach Coordinator, as well as three paid interns. Our team works collaboratively to make all operating and curatorial decisions."
+        },
+        {
+          "title": "Council",
+          "secondary": "Our Curatorial Advisory Council is comprised of six national experts in the arts including curators, critics, educators, and administrators. Each member serves a 1-3 year term and advise us on our various programming initiatives."
+        },
+        {
+          "title": "Board",
+          "secondary": "We are bolstered by an eighteen-person Board of Trustees. They oversee every aspect of the organization and come from various disciplines including the arts, humanities, education, medicine, law, public policy, and more."
+        }
+      ]
+    }
+  ]
+}

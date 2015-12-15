@@ -202,6 +202,12 @@ img { max-width: 100%; }
   clear: both;
 }
 
+
+.list-reset {
+  padding-left: 0;
+  list-style: none;
+}
+
 /* columnar stuff */
 #wrapper,
 .wrapper,
@@ -328,8 +334,8 @@ img { max-width: 100%; }
   .row {
     margin: 0 -1rem 2rem -1rem;
   }
-    
-  
+
+
 
 
   /* the Grid
@@ -391,7 +397,6 @@ img { max-width: 100%; }
   }
 
 }
-
 
 
 
@@ -493,7 +498,7 @@ These are some styles related to the crazy homepage solution Connor and Kristian
 }
 
 .imged.three {
-  background-image: url('img/tile_6.jpg'); 
+  background-image: url('img/tile_6.jpg');
 }
 
 .imged.four {
@@ -508,10 +513,10 @@ These are some styles related to the crazy homepage solution Connor and Kristian
   background-image: url('img/tile_2.jpg');
 }
 
-.twelve.columns,
-.six.columns,
-.four.columns,
-.two.columns {
+.twelve.columns .tile,
+.six.columns .tile,
+.four.columns .tile,
+.two.columns .tile {
   color: white;
 }
 

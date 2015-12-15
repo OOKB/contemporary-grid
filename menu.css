@@ -1,0 +1,31 @@
+.evenly-spread {
+  width: calc(100% / 7);
+  display: block;
+  float: left;
+  position: relative;
+}
+
+.evenly-spread a.main-link {
+  display: block;
+  width: 100%;
+  font-size: 125%;
+  font-weight: 900;
+  text-align: center;
+}
+
+.evenly-spread a.main-link:hover {
+  background: black;
+  color: white;
+}
+
+/**/
+.drawer {
+  position: absolute;
+  background: white;
+  z-index: 9;
+  display: none;
+}
+
+.evenly-spread:hover .drawer {
+  display: block;
+}
