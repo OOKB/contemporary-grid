@@ -5,35 +5,34 @@
     <link href="contempo-grid.css" rel="stylesheet" type="text/css" />
     <link href="menu.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
+  <body class="bg-white">
 
     <header>
       <div class="container">
         <div class="group">
           <h1 class="wordmark">The Contemporary</h1>
-          <div class="two columns logo">
+          <figure class="logo">
             <img src="img/logo.jpg" />
-          </div>
-          <div class="three columns offset-by-seven">
-<!--          <h1>The Contemporary</h1>-->
-            <a href="#member" class="btn">Become a Member</a> <br/>
-            <a href="#archive" class="btn">Explore the Archive</a> <br/>
-            <a href="#mailing-list" class="btn">Join our Mailing List</a>
+          </figure>
+          <div class="mission">
+            <p>
+              The Contemporary is a nomadic, non-collecting art museum in Baltimore, Maryland. We are committed to redefining the concept of a museum to be open, inclusive, and available to all. We believe that artists are essential to our world and play a unique role within society: to take risks, see things differently, and dismantle social boundaries. We move throughout the city connecting artists, partners, and communities, to create ambitious public programming that is responsive, challenging, and educational. Our work is inspired by three guiding principles: <em>artists matter</em>, <em>collaboration is key</em>, and <em>audience is everywhere</em>.
+            </p>
           </div>
         </div>
 
         <nav>
-          <ul id="main-menu-wrap" class="main-menu list-reset clearfix">
+          <ul id="main-menu-wrap" class="main-menu list-reset clearfix sticky">
             <script id="menu-drawers" type="text/x-mustache-template">
               {{#menu}}
                 <li class="mainlink evenly-spread drop-down {{mainlink}}">
                   <a class="main-link" href="#{{mainlink}}">{{mainlink}}</a>
                   <div class="drawer">
                     <div class="group">
-                      <div class="four columns blurb">
-                        <p class="lead">{{{primary}}}</p>
+                      <div class="three columns blurb">
+                        <p>{{{primary}}}</p>
                       </div>
-                      <ul class="eight columns sub-menu list-reset {{^sublink}}hidden{{/sublink}}">
+                      <ul class="eight columns offset-by-one sub-menu list-reset {{^sublink}}hidden{{/sublink}}">
                         {{#sublink}}
                           <li class="group">
                             <p class="four columns">
@@ -57,76 +56,68 @@
 
     </header>
 
-    <div class="container">
-        <div class="group">
-            <div class="three columns">
-                <div class="inner tile texted">
-                    <a href="" class="bigBlock">
-                        <h1>A title</h1>
-                        <p>A longer blurb of some sort of text. These will be list-y kind of tiles, or else paragraphy/quote-y tiles.</p>
-                    </a>
-                </div>
-            </div>
-            <div class="nine columns">
-                <div class="inner tile imged img-one">
-                    <a href="" class="bigBlock">
-                        <h1>Ghost Food</h1>
-                        <p>A little blurb of some sort of text...</p>
-                    </a>
-                </div>
-            </div>
-            <div class="six columns">
-                <div class="inner tile imged img-two">
-                    <a href="" class="bigBlock">
-                        <h1>Grit Fund</h1>
-                        <p>A little blurb of some sort of text...</p>
-                    </a>
-                </div>
-            </div>
-            <div class="four columns">
-                <div class="inner tile imged img-three">
-                    <a href="" class="bigBlock">
-                        <h1>Talking Shop</h1>
-                        <p>2015 Speaker Series</p>
-                    </a>
-                </div>
-            </div>
-            <div class="four columns">
-                <div class="inner tile imged img-four">
-                    <a href="" class="bigBlock">
-                        <h1>Archive</h1>
-                        <p>A longer blurb of some sort of text... trying to make this more flexible.</p>
-                    </a>
-                </div>
-            </div>
-            <div class="two columns">
-                <div class="inner tile texted">
-                    <a href="" class="bigBlock">
-                        <h1>A title</h1>
-                        <p>A longer blurb of some sort of text. These will be list-y kind of tiles, or else paragraphy/quote-y tiles.</p>
-                    </a>
-                </div>
-            </div>
-            <div class="four columns">
-                <div class="inner tile imged img-five">
-                    <a href="" class="bigBlock">
-                        <h1>Speaker Series</h1>
-                        <p>A longer blurb of some sort of text...</p>
-                    </a>
-                </div>
-            </div>
-            <div class="four columns">
-                <div class="inner tile imged img-six">
-                    <a href="" class="bigBlock">
-                        <h1>Scroll: Bound</h1>
-                        <p>A longer blurb of some sort of text... trying to make this more flexible.</p>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <main>
+      <div class="container">
+          <div class="group">
+              <div class="twelve columns">
+                  <!-- this will be a slideshow? -->
+                  <div class="inner tile imged img-one bg-red">
+                      <a href="" class="bigBlock">
+                          <h1>This will be a slideshow</h1>
+                          <p>A little blurb for each slide...</p>
+                      </a>
+                  </div>
+              </div>
+              <div class="six columns">
+                  <div class="inner tile imged img-two bg-orange">
+                      <a href="" class="bigBlock">
+                          <h1>Grit Fund</h1>
+                          <p>A little blurb of some sort of text...</p>
+                      </a>
+                  </div>
+              </div>
+              <div class="three columns">
+                  <div class="inner tile imged bg-yellow">
+                      <a href="" class="bigBlock">
+                          <h1>Talking Shop</h1>
+                          <p>2015 Speaker Series</p>
+                      </a>
+                  </div>
+              </div>
+              <div class="three columns">
+                  <div class="inner tile imged bg-darkgreen">
+                      <a href="" class="bigBlock">
+                          <h1>Archive</h1>
+                          <p>A longer blurb of some sort of text... trying to make this more flexible.</p>
+                      </a>
+                  </div>
+              </div>
+              <div class="three columns">
+                  <div class="inner tile texted white">
+                      <a href="" class="bigBlock">
+                          <h1>A title</h1>
+                          <p>A longer blurb of some sort of text. These will be list-y kind of tiles, or else paragraphy/quote-y tiles.</p>
+                      </a>
+                  </div>
+              </div>
+              <div class="three columns">
+                  <div class="inner tile imged bg-lightgreen">
+                      <a href="" class="bigBlock">
+                          <h1>Speaker Series</h1>
+                          <p>A longer blurb of some sort of text...</p>
+                      </a>
+                  </div>
+              </div>
+          </div>
 
-    </div>
+      </div>
+    </main>
 
+    <footer>
+      <div class="container">
+        <p>Simple footer tk.</p>
+      </div>
+    </footer>
     <!-- ---------------------------------- -->
     <!-- ---------------------------------- -->
     <!-- Javascript Magix happens down here -->
@@ -135,6 +126,7 @@
 
     <!-- this is jquery, needed for a bunch of stuff -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://malsup.github.io/jquery.cycle2.js"></script>
     <!-- this loads mustache.js, required for the templating to happen -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
 

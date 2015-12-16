@@ -324,17 +324,17 @@ header .columns {
     by default this has been set as a 12 column grid, so x = 12.
     y matches numerically the class number.
   */
-  .one                   { width: calc(100% / 12 * 03); }
-  .two                   { width: calc(100% / 12 * 03); }
-  .three                 { width: calc(100% / 12 * 03); }
-  .four                  { width: calc(100% / 12 * 06); }
-  .five                  { width: calc(100% / 12 * 06); }
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
   .six, .halfwidth       { width: calc(100% / 12 * 06); }
-  .seven                 { width: calc(100% / 12 * 09); }
-  .eight                 { width: calc(100% / 12 * 09); }
-  .nine                  { width: calc(100% / 12 * 09); }
-  .ten                   { width: calc(100% / 12 * 12); }
-  .eleven                { width: calc(100% / 12 * 12); }
+  .seven,
+  .eight,
+  .nine,
+  .ten,
+  .eleven,
   .twelve, .fullwidth    { width: calc(100% / 12 * 12); }
 
 }
@@ -373,7 +373,7 @@ header .columns {
   #wrapper,
   .wrapper,
   .container {
-    max-width: 75rem;
+    max-width: 82.5rem;
   }
 
   .group,
@@ -489,7 +489,6 @@ These are some styles related to the crazy homepage solution Connor and Kristian
 /*** testing an idea ***/
 
 .imged {
-  background-color: rgba(255,234,188,1);
   background-size: cover;
   width: 100%;
   height: 0;
