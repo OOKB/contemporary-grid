@@ -11,17 +11,14 @@
       <div class="container">
         <div class="group">
           <h1 class="wordmark">The Contemporary</h1>
-          <div class="three columns logo mlrauto">
+          <div class="two columns logo">
             <img src="img/logo.jpg" />
           </div>
-          <div class="three absolute">
-            <img src="img/logo.jpg" />
-          </div>
-          <div class="three columns offset-by-six">
+          <div class="three columns offset-by-seven">
 <!--          <h1>The Contemporary</h1>-->
-            <p>Become a Member</p>
-            <p>Explore the Archive</p>
-            <p>Join our Mailing List</p>
+            <a href="#member" class="btn">Become a Member</a> <br/>
+            <a href="#archive" class="btn">Explore the Archive</a> <br/>
+            <a href="#mailing-list" class="btn">Join our Mailing List</a>
           </div>
         </div>
 
@@ -29,7 +26,7 @@
           <ul id="main-menu-wrap" class="main-menu list-reset clearfix">
             <script id="menu-drawers" type="text/x-mustache-template">
               {{#menu}}
-                <li class="mainlink evenly-spread drop-down">
+                <li class="mainlink evenly-spread drop-down {{mainlink}}">
                   <a class="main-link" href="#{{mainlink}}">{{mainlink}}</a>
                   <div class="drawer">
                     <div class="group">
