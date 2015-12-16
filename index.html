@@ -136,9 +136,10 @@
     <script>
       /** the stuff for printing things out **/
       $.getJSON('menu.json', function(data) {
-
-        //mustache for projects
-        //this prints the project thumbnails
+        console.log( "success" );
+        //mustache for menu
+        //this prints the menu for now... is not working locally
+        // hoping to solve that
         var template = $('#menu-drawers').html();
         var info = Mustache.to_html(template, data);
         $('#main-menu-wrap').html(info);
