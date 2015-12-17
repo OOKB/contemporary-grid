@@ -66,7 +66,6 @@ a.main-link {
   position: absolute;
   left: 0;
   right:0;
-  background: white;
   z-index: 9;
   display: none;
   border-top: 3px solid rgba(26,42,53,1);
@@ -111,13 +110,9 @@ a.sub-link:hover {
 }
 
 .sub-menu > li .secondary {
-  background: white;
-/*  border-left: 3px solid rgba(241,97,74,1);*/
   display: none;
   position: absolute;
-  padding-top: 1em;
-  padding-left: 1em;
-  padding-bottom: 1em;
+  padding: 1em;
   min-height: 100%;
   top: 0;
   right: 0;
