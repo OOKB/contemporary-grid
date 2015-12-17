@@ -79,7 +79,6 @@ a.main-link {
 
 .drawer .blurb {
   line-height: 1.5em;
-  padding-top: 1em;
   padding-bottom: 1em;
 }
 
@@ -112,7 +111,7 @@ a.sub-link:hover {
 .sub-menu > li .secondary {
   display: none;
   position: absolute;
-  padding: 1em;
+  padding: 0 1em;
   min-height: 100%;
   top: 0;
   right: 0;
@@ -122,3 +121,41 @@ a.sub-link:hover {
   display: block;
 }
 
+/** Mailchimp Signup Form **/
+
+#mc_embed_signup h4 {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  margin-top: .25rem;
+  margin-bottom: .5rem;
+  padding-left: .5rem;
+}
+
+#mc_embed_signup .mc-field-group .email {
+  border: none;
+  border-bottom: 2px solid rgba(0,75,124,1);
+  height: 3rem;
+  font-size: 1.5rem;
+  line-height: inherit;
+  padding: .25em .25em .1em;
+  transition: all 400ms;
+  font-family: 'balto', helvetica, arial, sans-serif
+}
+
+#mc_embed_signup .mc-field-group .email:focus {
+  border-bottom: 2px solid rgba(201,222,121,1);
+  outline:none;
+  color: rgba(0,75,124,1);
+  background-color: rgba(201,222,121,.15);
+}
+
+#mc_embed_signup input.button {
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.25rem;
+  padding: .33rem 1.5rem;
+  height: 3rem;
+  font-family: 'balto', helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
