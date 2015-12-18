@@ -14,8 +14,7 @@
           <h1 class="wordmark bg-blue white p1">The Contemporary</h1>
 
           <!-- SVG logo -->
-          <svg class="logo" version="1.1" id="_x33__Lines" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-             y="0px" viewBox="0 0 300 360" enable-background="new 0 0 300 360" xml:space="preserve">
+          <svg class="logo" version="1.1" id="_x33__Lines" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 360" enable-background="new 0 0 300 360" xml:space="preserve">
             <path class="c" d="M155.2,358c-41.5,0-80.4-18.6-109.4-52.3C16.9,272.1,1,227.5,1,180S16.9,87.9,45.8,54.3
               C74.8,20.6,113.7,2,155.2,2c33.6,0,61.4,8.5,84.9,26c20.6,15.3,37.5,37.4,51.7,67.4c0.5,1,0.5,2.3,0,3.3c-0.5,1.1-1.4,1.9-2.5,2.2
               l-43.4,13.2c-1.4,0.4-3,0-4-1.1c-1-1.1-1.4-2.7-0.9-4.1c0.1-0.2,7-20.7-5.1-37.9c-12-17-38-25.6-77.2-25.6
@@ -31,7 +30,7 @@
               c0.5-2.1,2.6-3.5,4.7-3c2.1,0.5,3.5,2.6,3,4.7c-8.1,36.8-24.8,65.6-49.6,85.6C224.4,347.8,192.8,358,155.2,358z"/>
           </svg>
 
-          <div class="mission five">
+          <div class="mission five hidden-sm">
             <p class="lead blue b2 p2 bg-white">
               The Contemporary is a nomadic, non-collecting art museum in Baltimore, Maryland. Our work is inspired by three guiding principles: <em>artists matter</em>, <em>collaboration is key</em>, and <em>audience is everywhere</em>.
             </p>
@@ -99,6 +98,22 @@
       <div class="container">
           <div class="group">
               <div class="twelve columns">
+                <div class="cycle-slideshow"
+                  data-cycle-fx=scrollHorz
+                  data-cycle-timeout=0
+                  data-cycle-prev=".prevControl"
+                  data-cycle-next=".nextControl"
+                  >
+                  <img src="http://malsup.github.io/images/p1.jpg">
+                  <img src="http://malsup.github.io/images/p2.jpg">
+                  <img src="http://malsup.github.io/images/p3.jpg">
+                  <img src="http://malsup.github.io/images/p4.jpg">
+                </div>
+                <div class=center>
+                  <span class="prevControl"><<Prev </span>
+                  <span class="nextControl"> Next>></span>
+                </div>
+
                   <!-- this will be a slideshow? -->
                   <div class="inner tile imged bg-red">
                       <a href="" class="bigBlock">
@@ -108,8 +123,8 @@
                   </div>
               </div>
               <div class="six columns">
-                  <div class="inner tile imged bg-orange">
-                      <a href="" class="bigBlock">
+                  <div class="inner tile imged bg-orange gritfund">
+                      <a href="#gritfund" class="bigBlock">
                           <h1>Grit Fund</h1>
                           <p>A little blurb of some sort of text...</p>
                       </a>

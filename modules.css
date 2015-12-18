@@ -29,6 +29,13 @@
 .bg-white       { background-color: rgba(250,252,255,1); }
 .bg-black       { background-color: rgba(026,010,008,1); }
 
+/** margin **/
+.m1             { margin: 1rem; }
+
+.ml1            { margin-left: 1rem; }
+
+.mlrauto        { margin-left:auto; margin-right: auto;}
+
 /** padding **/
 .p1             { padding: 1rem; }
 .p2             { padding: 2rem; }

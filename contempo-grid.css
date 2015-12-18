@@ -326,7 +326,7 @@ header .columns {
   .wrapper,
   .container {
     min-width: 30rem;
-    width: 80%;
+    max-width: 95%;
   }
 
   .group,
@@ -361,6 +361,20 @@ header .columns {
   .ten,
   .eleven,
   .twelve, .fullwidth    { width: calc(100% / 12 * 12); }
+
+}
+
+@media (min-width: 50rem) {
+  .visible-lg,
+  .hidden-sm {
+    display: block;
+    visibility: visible;
+  }
+  .visible-sm,
+  .hidden-lg {
+    display: none;
+    visibility: hidden;
+  }
 
 }
 
@@ -421,16 +435,6 @@ header .columns {
   .offset-by-ten         { margin-left: calc(100% / 12 * 10); }
   .offset-by-eleven      { margin-left: calc(100% / 12 * 11); }
   .offset-by-twelve      { margin-left: calc(100% / 12 * 12); }
-
-  .visible-lg {
-    display: block;
-    visibility: visible;
-  }
-  .visible-sm,
-  .hidden-lg {
-    display: none;
-    visibility: hidden;
-  }
 
 }
 
@@ -509,6 +513,9 @@ These are some styles related to the crazy homepage solution Connor and Kristian
   padding-bottom: 60%;
   overflow: hidden;
   position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .imged a {
@@ -548,6 +555,10 @@ These are some styles related to the crazy homepage solution Connor and Kristian
   max-width: 75%;
   bottom: 3%;
   right: 3%;
+}
+
+.imged.gritfund {
+  background-image: url('img/gritfund2.jpg');
 }
 
 /**
