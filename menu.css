@@ -33,7 +33,6 @@ a.sub-link {
   color: rgba(26,42,53,1);
   display: block;
   width: 100%;
-  font-size: 125%;
   font-weight: 900;
   text-decoration: none;
   transition: all 400ms;
@@ -62,101 +61,135 @@ a.main-link {
   box-shadow: 0 0 .33333rem 0 rgba(26,42,53,.4);
 }
 
-/**/
 .drawer {
-  position: absolute;
-  left: 0;
-  right:0;
-  z-index: 9;
   display: none;
-  border-top: 3px solid rgba(26,42,53,1);
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
 }
 
-.evenly-spread:hover .drawer {
-  display: block;
-}
 
-.drawer .blurb {
-  line-height: 1.5em;
-  padding-bottom: 1em;
-}
-
-.drawer .columns,
-.drawer p,
-.sub-menu > li p {
-  margin-bottom: 0;
-}
-
-.sub-menu > li {
-  display: block;
-  position: static;
-}
-
+/*** Controling the menu fontsize ***/
+a.main-link,
 a.sub-link {
-  line-height: 2em;
-  border-bottom: 1px solid rgba(26,42,53,1);
-  padding-left: .25em;
+  font-size: 90%;
 }
 
-.sub-menu > li:first-child .sub-link {
-  border-top: 1px solid rgba(26,42,53,1);
+@media (min-width: 50rem) {
+  a.main-link,
+  a.sub-link {
+    font-size: 100%;
+  }
 }
 
-.sub-menu > li:hover .sub-link,
-a.sub-link:hover {
-  color: rgba(241,97,74,1);
+@media (min-width: 60rem) {
+  a.main-link,
+  a.sub-link {
+    font-size: 110%;
+  }
 }
 
-.sub-menu > li .secondary {
-  display: none;
-  position: absolute;
-  padding: 0 1em;
-  min-height: 100%;
-  top: 0;
-  right: 0;
-  left: calc(100% / 12 * 04 - .75rem);
-}
-.sub-menu > li:hover .secondary {
-  display: block;
+@media (min-width: 75rem) {
+  a.main-link,
+  a.sub-link {
+    font-size: 125%;
+  }
 }
 
-/** Mailchimp Signup Form **/
 
-#mc_embed_signup h4 {
-  text-transform: uppercase;
-  font-size: 1.25rem;
-  margin-top: .25rem;
-  margin-bottom: .5rem;
-  padding-left: .5rem;
-}
+@media (min-width: 40rem) {
+  /**/
+  .drawer {
+    border-top: 3px solid rgba(26,42,53,1);
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    position: absolute;
+    left: 0;
+    right:0;
+    z-index: 9;
+  }
 
-#mc_embed_signup .mc-field-group .email {
-  border: none;
-  border-bottom: 2px solid rgba(0,75,124,1);
-  height: 3rem;
-  font-size: 1.5rem;
-  line-height: inherit;
-  padding: .25em .25em .1em;
-  transition: all 400ms;
-  font-family: 'balto', helvetica, arial, sans-serif
-}
+  .evenly-spread:hover .drawer {
+    display: block;
+  }
 
-#mc_embed_signup .mc-field-group .email:focus {
-  border-bottom: 2px solid rgba(201,222,121,1);
-  outline:none;
-  color: rgba(0,75,124,1);
-  background-color: rgba(201,222,121,.15);
-}
+  .drawer .blurb {
+    line-height: 1.5em;
+    padding-bottom: 1em;
+  }
 
-#mc_embed_signup input.button {
-  border: none;
-  border-radius: 1rem;
-  font-size: 1.25rem;
-  padding: .33rem 1.5rem;
-  height: 3rem;
-  font-family: 'balto', helvetica, arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
+  .drawer .columns,
+  .drawer p,
+  .sub-menu > li p {
+    margin-bottom: 0;
+  }
+
+  .sub-menu > li {
+    display: block;
+    position: static;
+  }
+
+  a.sub-link {
+    line-height: 2em;
+    border-bottom: 1px solid rgba(26,42,53,1);
+    padding-left: .25em;
+  }
+
+  .sub-menu > li:first-child .sub-link {
+    border-top: 1px solid rgba(26,42,53,1);
+  }
+
+  .sub-menu > li:hover .sub-link,
+  a.sub-link:hover {
+    color: rgba(241,97,74,1);
+  }
+
+  .sub-menu > li .secondary {
+    display: none;
+    position: absolute;
+    padding: 0 1em;
+    min-height: 100%;
+    top: 0;
+    right: 0;
+    left: calc(100% / 12 * 04 - .75rem);
+  }
+  .sub-menu > li:hover .secondary {
+    display: block;
+  }
+
+  /** Mailchimp Signup Form **/
+
+  #mc_embed_signup h4 {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    margin-top: .25rem;
+    margin-bottom: .5rem;
+    padding-left: .5rem;
+  }
+
+  #mc_embed_signup .mc-field-group .email {
+    border: none;
+    border-bottom: 2px solid rgba(0,75,124,1);
+    height: 3rem;
+    font-size: 1.5rem;
+    line-height: inherit;
+    padding: .25em .25em .1em;
+    transition: all 400ms;
+    font-family: 'balto', helvetica, arial, sans-serif
+  }
+
+  #mc_embed_signup .mc-field-group .email:focus {
+    border-bottom: 2px solid rgba(201,222,121,1);
+    outline:none;
+    color: rgba(0,75,124,1);
+    background-color: rgba(201,222,121,.15);
+  }
+
+  #mc_embed_signup input.button {
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    padding: .33rem 1.5rem;
+    height: 3rem;
+    font-family: 'balto', helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
 }

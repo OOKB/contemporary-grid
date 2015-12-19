@@ -506,7 +506,6 @@ These are some styles related to the crazy homepage solution Connor and Kristian
 **/
 
 /*** testing an idea ***/
-
 .imged {
   width: 100%;
   height: 0;
@@ -579,3 +578,10 @@ NOTES AND HELP:
 /* Centering in the unknown */
 /* from http://css-tricks.com/centering-in-the-unknown/
   ---------------------------------------------------------*/
+
+
+/** slideshow? **/
+.cycle-slideshow,
+.cycle-slideshow .item {
+  width: 100%;
+}
