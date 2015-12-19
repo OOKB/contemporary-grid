@@ -515,6 +515,7 @@ These are some styles related to the crazy homepage solution Connor and Kristian
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: all 400ms;
 }
 
 .imged a {
@@ -529,6 +530,11 @@ These are some styles related to the crazy homepage solution Connor and Kristian
   height: 100%;
   width: 100%;
   color: inherit;
+  transition: all 400ms;
+}
+
+.imged:hover {
+  box-shadow: 0 0 10px rgba(26,42,53,.33);
 }
 
 .imged a:hover {
