@@ -164,34 +164,6 @@ small,
 img { max-width: 100%; }
 
 /** Base 2 column grid **/
-/* Visibility Classes */
-.show {
-  display: block !important;
-}
-.hidden {
-  display: none !important;
-}
-.invisible {
-  visibility: hidden;
-}
-
-.visible-lg,
-.hidden-sm {
-  display: none;
-  visibility: hidden;
-}
-
-.hide-text {
-  text-indent: 200%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.show-text {
-  text-indent: 0%;
-  white-space: normal;
-  overflow: visible;
-}
 
 /* floats and clears */
 .left,
@@ -251,8 +223,6 @@ img { max-width: 100%; }
   list-style: none;
 }
 
-
-
 /****************************************************/
 /****************************************************/
 /****************************************************/
@@ -263,8 +233,6 @@ img { max-width: 100%; }
 /****************************************************/
 /****************************************************/
 /****************************************************/
-
-
 
 /* columnar stuff */
 #wrapper,
@@ -364,20 +332,6 @@ header .columns {
 
 }
 
-@media (min-width: 50rem) {
-  .visible-lg,
-  .hidden-sm {
-    display: block;
-    visibility: visible;
-  }
-  .visible-sm,
-  .hidden-lg {
-    display: none;
-    visibility: hidden;
-  }
-
-}
-
 /** XL **/
 @media (min-width: 75rem) {
   /** 12 column grid changeup **/
@@ -458,17 +412,30 @@ svg.logo .c {
   fill: rgba(241,97,74,1);
 }
 
+header .logo {
+  width: 200px;
+}
+
 @media (min-width: 50rem) {
+  header .logo {
+    width: 100%;
+  }
+
   header h1.wordmark,
   header .mission {
     position: absolute;
     z-index: 99;
+    transition: all 400ms;
   }
 
   header h1.wordmark {
     transform: rotate(5.625deg);
     top: 40%;
     left: -2%;
+    /**/
+    color: rgba(250,252,255,1);
+    background-color: rgba(000,075,124,1);
+    padding: 1rem;
   }
 
   header .logo {

@@ -29,9 +29,9 @@
               c0.5-2.1,2.6-3.5,4.7-3c2.1,0.5,3.5,2.6,3,4.7c-8.1,36.8-24.8,65.6-49.6,85.6C224.4,347.8,192.8,358,155.2,358z"/>
           </svg>
 
-          <h1 class="wordmark bg-blue white p1">The Contemporary</h1>
+          <h1 class="wordmark">The Contemporary</h1>
 
-          <div class="mission five hidden-sm">
+          <div class="mission five visible-60em">
             <p class="lead blue b2 p2 bg-white">
               The Contemporary is a nomadic, non-collecting art museum in Baltimore, Maryland. Our work is inspired by three guiding principles: <em>artists matter</em>, <em>collaboration is key</em>, and <em>audience is everywhere</em>.
             </p>
@@ -40,6 +40,30 @@
 
         <nav>
           <ul id="main-menu-wrap" class="main-menu list-reset clearfix sticky">
+            <!-- main links are here even if JS doesn't load for some reason -->
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="#Visit">Visit</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="#About">About</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="#Programs">Programs</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="#Resources">Resources</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="#Support">Support</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="#Shop">Shop</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="#Contact">Contact</a>
+            </li>
+
+            <!-- print out the full menu -->
             <script id="menu-drawers" type="text/x-mustache-template">
               {{#menu}}
                 <li class="mainlink evenly-spread drop-down {{mainlink}}">

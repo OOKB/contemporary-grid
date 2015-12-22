@@ -43,3 +43,48 @@
 /** borders? **/
 .b1             { border: 1px solid; }
 .b2             { border: 2px solid; }
+
+/** hidden/visible **/
+/* Visibility Classes */
+.show           { display: block !important; }
+.hidden         { display: none !important; }
+.invisible      { visibility: hidden; }
+
+.visible-lg,
+.visible-60em,
+.hidden-sm {
+  display: none;
+  visibility: hidden;
+}
+
+@media (min-width: 60rem) {
+  .visible-60em {
+    display: block;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 75rem) {
+  .visible-lg,
+  .hidden-sm {
+    display: block;
+    visibility: visible;
+  }
+  .visible-sm,
+  .hidden-lg {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.hide-text {
+  text-indent: 200%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.show-text {
+  text-indent: 0%;
+  white-space: normal;
+  overflow: visible;
+}

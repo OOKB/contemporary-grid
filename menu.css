@@ -36,7 +36,6 @@ a.main-link {
 }
 
 .evenly-spread a.main-link {
-  text-align: center;
   padding-top: .4em;
   padding-bottom: .4em;
 }
@@ -61,7 +60,7 @@ a.main-link {
 /*** Controling the menu fontsize ***/
 a.main-link,
 a.sub-link {
-  font-size: 90%;
+  font-size: 115%;
 }
 
 @media (min-width: 50rem) {
@@ -74,16 +73,20 @@ a.sub-link {
     position: static;
   }
 
+  .evenly-spread a.main-link {
+    text-align: center;
+  }
+
   a.main-link,
   a.sub-link {
-    font-size: 100%;
+    font-size: 95%;
   }
 }
 
 @media (min-width: 60rem) {
   a.main-link,
   a.sub-link {
-    font-size: 110%;
+    font-size: 105%;
   }
 }
 
@@ -95,7 +98,7 @@ a.sub-link {
 }
 
 
-@media (min-width: 40rem) {
+@media (min-width: 50rem) {
   /**/
   .drawer {
     border-top: 3px solid rgba(26,42,53,1);
