@@ -454,33 +454,35 @@ header .columns {
 
 
 /** starting to custom style the header a bit more **/
-header h1.wordmark,
-header .mission {
-  position: absolute;
-  z-index: 99;
-}
-
-header h1.wordmark {
-  transform: rotate(5.625deg);
-  top: 40%;
-  left: -2%;
-}
-
-header .logo {
-  margin-top: 2%;
-  width: 20%;
-  margin-left: 20%;
-  height: auto;
-}
-
 svg.logo .c {
   fill: rgba(241,97,74,1);
 }
 
-header .mission {
-  transform: rotate(-11.25deg);
-  top: 6%;
-  right: 0;
+@media (min-width: 50rem) {
+  header h1.wordmark,
+  header .mission {
+    position: absolute;
+    z-index: 99;
+  }
+
+  header h1.wordmark {
+    transform: rotate(5.625deg);
+    top: 40%;
+    left: -2%;
+  }
+
+  header .logo {
+    margin-top: 2%;
+    width: 20%;
+    margin-left: 20%;
+    height: auto;
+  }
+
+  header .mission {
+    transform: rotate(-11.25deg);
+    top: 6%;
+    right: 0;
+  }
 }
 
 /** neon sign will really glow!!!! **/
