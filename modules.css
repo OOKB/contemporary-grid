@@ -43,6 +43,8 @@
 /** borders? **/
 .b1             { border: 1px solid; }
 .b2             { border: 2px solid; }
+.b3t            { border-top: 3px solid; }
+.b3b            { border-bottom: 3px solid; }
 
 /** hidden/visible **/
 /* Visibility Classes */
