@@ -234,7 +234,7 @@
     <footer>
       <div class="container">
         <div class="group">
-          <p class="four columns">Unless otherwise noted, all work, etc. is © Copyright 1989–<span class="year dynamic">2016</span> The Contemporary</p>
+          <p class="four columns">Unless otherwise noted, all work, images, text, etc. is Copyright © 1989–<span class="year dynamic">2016</span> The Contemporary</p>
           <ul class="four columns social">
             <li>Facebook</li>
             <li>Instagram</li>
@@ -243,6 +243,9 @@
             <li>Vimeo</li>
             <li>YouTube</li>
           </ul>
+          <div class="four columns social">
+            <a href="https://www.facebook.com/thecontemporarymuseum" class="darkblue"><i class="fa fa-facebook-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-instagram fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-twitter-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-tumblr-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-vimeo-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-youtube-square fa-lg"></i></a>
+          </div>
         </div>
       </div>
     </footer>
@@ -255,12 +258,13 @@
     <!-- this is jquery, needed for a bunch of stuff -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="http://malsup.github.io/jquery.cycle2.js"></script>
+
     <!-- this loads mustache.js, required for the templating to happen -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
 
     <!-- I can also get stuff from here: http://dbox.cape.io/7192159/cape/contemporary?render=ezle&merge-data=1&merge-content=1 -->
 
-    <!-- This actually takes your behance data and prints it into the site -->
+    <!-- This actually takes the menu.json data and prints it into the site -->
     <script>
       /** the stuff for printing things out **/
       $.getJSON('menu.json', function(data) {
