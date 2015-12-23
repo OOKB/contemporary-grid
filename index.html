@@ -2,6 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The Contemporary (A nomadic, non-collecting art museum in Baltimore, Maryland.)</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="contempo-grid.css" rel="stylesheet" type="text/css" />
     <link href="modules.css" rel="stylesheet" type="text/css" />
     <link href="menu.css" rel="stylesheet" type="text/css" />
@@ -228,7 +233,17 @@
 
     <footer>
       <div class="container">
-        <p>Simple footer tk.</p>
+        <div class="group">
+          <p class="four columns">Unless otherwise noted, all work, etc. is © Copyright 1989–<span class="year dynamic">2016</span> The Contemporary</p>
+          <ul class="four columns social">
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>Tumblr</li>
+            <li>Vimeo</li>
+            <li>YouTube</li>
+          </ul>
+        </div>
       </div>
     </footer>
     <!-- ---------------------------------- -->
@@ -242,6 +257,8 @@
     <script src="http://malsup.github.io/jquery.cycle2.js"></script>
     <!-- this loads mustache.js, required for the templating to happen -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
+
+    <!-- I can also get stuff from here: http://dbox.cape.io/7192159/cape/contemporary?render=ezle&merge-data=1&merge-content=1 -->
 
     <!-- This actually takes your behance data and prints it into the site -->
     <script>
@@ -257,6 +274,14 @@
         console.log( "You now have a menu." );
 
       });
+    </script>
+
+    <script>
+      // dynamically update the year in the footer (not the best idea, but this works!...)
+      var d = new Date();
+      var year = d.getFullYear();
+      console.log('It is ' + year + '.');
+      $('footer .year.dynamic').html(year);
     </script>
 
   </body>
