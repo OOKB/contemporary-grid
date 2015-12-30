@@ -47,32 +47,32 @@
           <ul id="main-menu-wrap" class="main-menu list-reset clearfix sticky">
             <!-- main links are here even if JS doesn't load for some reason -->
             <li class="mainlink evenly-spread">
-              <a class="main-link" href="#Visit">Visit</a>
+              <a class="main-link" href="/visit/">Visit</a>
             </li>
             <li class="mainlink evenly-spread">
-              <a class="main-link" href="#About">About</a>
+              <a class="main-link" href="/about/">About</a>
             </li>
             <li class="mainlink evenly-spread">
-              <a class="main-link" href="#Programs">Programs</a>
+              <a class="main-link" href="/programs/">Programs</a>
             </li>
             <li class="mainlink evenly-spread">
-              <a class="main-link" href="#Resources">Resources</a>
+              <a class="main-link" href="/resources/">Resources</a>
             </li>
             <li class="mainlink evenly-spread">
-              <a class="main-link" href="#Support">Support</a>
+              <a class="main-link" href="/support/">Support</a>
             </li>
             <li class="mainlink evenly-spread">
-              <a class="main-link" href="#Shop">Shop</a>
+              <a class="main-link" href="#shop">Shop</a>
             </li>
             <li class="mainlink evenly-spread">
-              <a class="main-link" href="#Contact">Contact</a>
+              <a class="main-link" href="#contact">Contact</a>
             </li>
 
             <!-- print out the full menu -->
             <script id="menu-drawers" type="text/x-mustache-template">
               {{#menu}}
                 <li class="mainlink evenly-spread drop-down {{mainlink}}">
-                  <a class="main-link" href="#{{mainlink}}">{{mainlink}}</a>
+                  <a class="main-link" href="{{#url}}{{url}}{{/url}}{{^url}}#{{mainlink}}{{/url}}">{{mainlink}}</a>
                   <div class="drawer bg-white">
                     <div class="three columns blurb">
                       <p>{{{primary}}}</p>
@@ -81,7 +81,7 @@
                       {{#sublink}}
                         <li class="group">
                           <p class="four columns">
-                            <a class="sub-link" href="#{{title}}">{{title}}</a>
+                            <a class="sub-link" href="{{#url}}{{url}}{{/url}}{{^url}}#{{title}}{{/url}}">{{title}}</a>
                           </p>
                           <p class="eight columns secondary">
                             {{{secondary}}}
@@ -183,8 +183,8 @@
               </div>
             </div>
             <div class=controls>
-              <div class="prevControl"> << Prev </div>
-              <div class="nextControl"> Next >> </div>
+              <div class="prevControl"> <i class="fa fa-angle-left fa-4x"> <span class="hidden">Left/Previous</span> </i> </div>
+              <div class="nextControl"> <i class="fa fa-angle-right fa-4x"> <span class="hidden">Right/Next</span> </i> </div>
             </div>
 
           </div>
