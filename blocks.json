@@ -1,33 +1,33 @@
 {
-  "slideshow": [
+  "blocks": [
     {
-      "title": "Slide 1",
+      "title": "Block 1",
       "blurb": "something......",
       "url": "#page1",
       "image": "tk"
     },
     {
-      "title": "Slide 2",
+      "title": "Block 2",
       "blurb": "anything......",
       "url": "#page2",
       "image": "tk"
     },
     {
-      "title": "Slide 3",
+      "title": "Block 3",
       "blurb": "something else......",
       "url": "#page3",
       "image": "tk"
     },
     {
-      "title": "Slide 4",
+      "title": "Block 4",
       "blurb": "another, different thing......",
       "url": "#page4",
       "image": "tk"
     },
     {
-      "title": "Slide 5",
+      "title": "Block 5",
       "blurb": "lorem ipsum dolor sit amet......",
-      "url": "#page5",
+      "url": "#page4",
       "image": "tk"
     }
   ]
