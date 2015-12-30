@@ -108,10 +108,12 @@ a.sub-link {
     left: 0;
     right:0;
     z-index: 9;
+    transition: all 400ms;
   }
 
   .evenly-spread:hover .drawer {
     display: block;
+    box-shadow: 0 10px 20px -10px rgba(26,42,53,.4);
   }
 
   .drawer .blurb {
