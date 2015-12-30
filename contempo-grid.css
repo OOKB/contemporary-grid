@@ -239,7 +239,9 @@ img { max-width: 100%; }
 .wrapper,
 .container {
   margin: 0 auto;
-  padding: 0 .75rem 1.5rem .75rem;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  padding-bottom: 1.55rem;
   width: 100%;
 }
 
@@ -253,7 +255,8 @@ img { max-width: 100%; }
 .column,
 .columns {
   margin: 0 0 1.5rem 0;
-  padding: 0 .75rem;
+  padding-left: .75rem;
+  padding-right: .75rem;
 }
 
 header #wrapper,
@@ -300,7 +303,8 @@ header .columns {
   .group,
   .grouped,
   .row {
-    margin: 0 -.75rem;
+    margin-left: -.75rem;
+    margin-right: -.75rem;
   }
 
   .column,
