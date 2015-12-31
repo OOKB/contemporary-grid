@@ -487,17 +487,17 @@ header .logo {
   }
     
   .drawer .blurb a {
-    background-color: rgba(026,042,053,1);
-    color: rgba(250,252,255,1);
+    color: rgba(026,010,008,1);
+    border-bottom: 3px solid rgba(255,234,058,1);
+    box-sizing: border-box;
     text-decoration: none;
-    border: none;
-    border-radius: 1rem;
-    font-size: 1.25rem;
-    padding: .33rem 1.5rem;
-    height: 4rem;
-    font-family: 'balto', helvetica, arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
+    padding: .15em;
+    padding-bottom: 0em;
+  }
+  
+  .drawer .blurb a:hover {
+    background-color: rgba(255,234,058,1);
+    transition: background-color 0.33s ease;
   }
 }
 

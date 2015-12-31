@@ -117,6 +117,7 @@ a.sub-link {
   }
 
   .drawer .blurb {
+    font-size: 1.25em;
     line-height: 1.5em;
     padding-bottom: 1em;
   }
@@ -155,6 +156,7 @@ a.sub-link {
     top: 0;
     right: 0;
     left: calc(100% / 12 * 04 - .75rem);
+    line-height: 1.5em;
   }
   .sub-menu > li:hover .secondary {
     display: block;
