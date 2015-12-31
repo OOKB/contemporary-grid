@@ -133,13 +133,7 @@
         <div class="group">
 
           <div class="twelve columns">
-            <div class="cycle-slideshow"
-              data-cycle-fx="scrollHorz"
-              data-cycle-timeout="5000"
-              data-cycle-prev=".prevControl"
-              data-cycle-next=".nextControl"
-              data-cycle-slides="> div.item"
-              >
+            <div id="slideshow-wrap" class="cycle-slideshow">
               <!-- this will be a slideshow? -->
               <div class="item">
                 <div class="inner tile imged bg-red">
@@ -181,6 +175,20 @@
                     </a>
                 </div>
               </div>
+
+              <script id="slide-item" type="text/x-mustache-template">
+              {{#slideshow}}
+                <div class="item">
+                  <div class="inner tile imged" style="background-image:url({{image}});">
+                    <a href="{{url}}" class="bigBlock">
+                      <h1>{{title}}</h1>
+                      <p>{{blurb}}</p>
+                    </a>
+                  </div>
+                </div>
+              {{/slideshow}}
+              </script>
+
             </div>
             <div class=controls>
               <div class="prevControl"> <i class="fa fa-angle-left fa-4x"> <span class="hidden">Left/Previous</span> </i> </div>
@@ -265,16 +273,36 @@
     <script>
       /** the stuff for printing things out **/
       $.getJSON('menu.json', function(data) {
-        console.log( "success" );
-        //mustache for menu
-        //this prints the menu for now... is not working locally
-        // hoping to solve that
+        console.log( "Menu success" );
         var template = $('#menu-drawers').html();
         var info = Mustache.to_html(template, data);
         $('#main-menu-wrap').html(info);
         console.log( "You now have a menu." );
 
       });
+
+    </script>
+
+    <script>
+      /** the stuff for printing the dynamic slideshow out **/
+      $.getJSON("slideshow.json", function(data) {
+        console.log( "SS success" );
+        var template = $("#slide-item").html();
+        var info = Mustache.to_html(template, data);
+        $("#slideshow-wrap").html(info);
+        console.log( "You now have the contents for a slideshow, next to get it to work." );
+
+        $("#slideshow-wrap").cycle("destroy");
+        $("#slideshow-wrap").cycle({
+          fx: "slideHorz",
+          timeout: 50000,
+          prev: ".prevControl",
+          next: ".nextControl",
+          slides: "> div.item"
+        });
+
+      });
+
     </script>
 
     <script>

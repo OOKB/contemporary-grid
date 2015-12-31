@@ -566,6 +566,15 @@ NOTES AND HELP:
   width: 100%;
 }
 
+.cycle-slideshow .item {
+  position: relative;
+  height: auto;
+}
+
+.item.cycle-slide.cycle-slide-active {
+  visibility: visible;
+}
+
 .controls {
   position: absolute;
   top:0;
