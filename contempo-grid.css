@@ -102,13 +102,27 @@ h4 { font-size: 1.75rem; }
 h5 { font-size: 1.5rem;  }
 h6 { font-size: 1.33rem; }
 
+header h1.wordmark {
+/*    font-size: 1.5rem;*/
+    position: absolute;
+    transform: rotate(-5.625deg);
+    top: 35%;
+    left: 2%;
+    /**/
+    color: rgba(250,252,255,1);
+    background-color: rgba(000,075,124,1);
+/*    padding: .5rem;*/
+    padding: 1rem;
+    z-index: 9999;
+  }
+
 p {
   margin-top: 0;
   margin-bottom: 1em;
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 300;
 }
 
@@ -416,8 +430,28 @@ svg.logo .c {
   fill: rgba(241,97,74,1);
 }
 
+/*
+.skinny-logo {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+*/
+
+/*TESTING SIZING ON THE SKINNY VIEW*/
+
+/*
 header .logo {
-  width: 200px;
+  width: 150px;
+  margin-left: 30%;
+  margin-top: 5%;
+}
+*/
+
+header .logo {
+  width: 250px;
+  margin-left: 20%;
+  margin-top: 5%;
 }
 
 @media (min-width: 50rem) {
@@ -435,11 +469,12 @@ header .logo {
   header h1.wordmark {
     transform: rotate(5.625deg);
     top: 40%;
-    left: -2%;
+    left: 2%;
     /**/
     color: rgba(250,252,255,1);
     background-color: rgba(000,075,124,1);
     padding: 1rem;
+    z-index: 9999;
   }
 
   header .logo {
@@ -450,9 +485,15 @@ header .logo {
   }
 
   header .mission {
-    transform: rotate(-11.25deg);
-    top: 6%;
-    right: 0;
+    transform: rotate(-8.25deg);
+    top: 8%;
+    right: 5%;
+    width: 500px;
+  }
+    
+  header .mission p {
+    color: rgba(000,075,124,1); 
+    border: 3px rgba(255,234,058,1) solid;   
   }
 }
 

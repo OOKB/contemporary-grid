@@ -38,13 +38,13 @@ a.main-link {
 .evenly-spread a.main-link {
   padding-top: .4em;
   padding-bottom: .4em;
+  padding-left: .4em;
 }
 
 #main-menu-wrap .evenly-spread:hover a.main-link,
 #main-menu-wrap .evenly-spread a.main-link:hover,
 #main-menu-wrap .evenly-spread a.main-link:focus {
-  background: rgba(26,42,53,1);
-  color: white;
+  color: rgba(26,42,53,1);
 }
 
 #main-menu-wrap .evenly-spread a.main-link:active {
