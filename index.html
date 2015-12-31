@@ -288,13 +288,37 @@
           new stuff, then destroy the old SS and start a new one...
           http://jquery.malsup.com/cycle2/api/#commands for more help
         */
-        $("#slideshow-wrap").cycle({
-          fx: "slideHorz",
-          timeout: 50000,
-          prev: ".prevControl",
-          next: ".nextControl",
-          slides: "> div.item"
+
+        var ww = $(window).width();
+
+        if (ww >= 800) {
+          $("#slideshow-wrap").cycle({
+            fx: "slideHorz",
+            timeout: 50000,
+            prev: ".prevControl",
+            next: ".nextControl",
+            slides: "> div.item"
+          });
+        } else {
+          $("#slideshow-wrap").cycle("destroy");
+        }
+
+        $(window).resize(function() {
+          $("#slideshow-wrap").cycle("destroy");
+          var ww = $(window).width();
+          if (ww >= 800) {
+            $("#slideshow-wrap").cycle({
+              fx: "slideHorz",
+              timeout: 50000,
+              prev: ".prevControl",
+              next: ".nextControl",
+              slides: "> div.item"
+            });
+          } else {
+            $("#slideshow-wrap").cycle("destroy");
+          }
         });
+
       });
     </script>
 

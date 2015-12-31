@@ -102,20 +102,6 @@ h4 { font-size: 1.75rem; }
 h5 { font-size: 1.5rem;  }
 h6 { font-size: 1.33rem; }
 
-header h1.wordmark {
-/*    font-size: 1.5rem;*/
-  position: absolute;
-  transform: rotate(-5.625deg);
-  top: 35%;
-  left: 2%;
-  /**/
-  color: rgba(250,252,255,1);
-  background-color: rgba(000,075,124,1);
-/*    padding: .5rem;*/
-  padding: 1rem;
-  z-index: 9999;
-}
-
 p {
   margin-top: 0;
   margin-bottom: 1em;
@@ -400,8 +386,6 @@ header .columns {
 
 }
 
-
-
 /****************************************************/
 /****************************************************/
 /****************************************************/
@@ -412,41 +396,35 @@ header .columns {
 /****************************************************/
 /****************************************************/
 /****************************************************/
-
-
 
 /** starting to custom style the header a bit more **/
 svg.logo .c {
   fill: rgba(241,97,74,1);
 }
 
-/*
-.skinny-logo {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-*/
-
 /*TESTING SIZING ON THE SKINNY VIEW*/
 
-/*
 header .logo {
-  width: 150px;
-  margin-left: 30%;
-  margin-top: 5%;
+  width: 200px;
+  position: absolute;
 }
-*/
 
-header .logo {
-  width: 250px;
-  margin-left: 20%;
-  margin-top: 5%;
+header h1.wordmark {
+  font-size: 2rem;
+  position: absolute;
+  transform: rotate(-5.625deg);
+  z-index: 9999;
+  top: 6.125rem;
+  left: 5rem;
 }
 
 @media (min-width: 50rem) {
   header .logo {
-    width: 100%;
+    margin-top: .75rem;
+    margin-left: 25%;
+    width: 20%;
+    height: auto;
+    position: static;
   }
 
   header h1.wordmark,
@@ -458,20 +436,12 @@ header .logo {
 
   header h1.wordmark {
     transform: rotate(5.625deg);
-    top: 40%;
-    left: 2%;
+    top: 35%;
+    left: 42.5%;
     /**/
     color: rgba(250,252,255,1);
     background-color: rgba(000,075,124,1);
     padding: 1rem;
-    z-index: 9999;
-  }
-
-  header .logo {
-    margin-top: 2%;
-    width: 20%;
-    margin-left: 20%;
-    height: auto;
   }
 
   header .mission {
@@ -485,7 +455,7 @@ header .logo {
     color: rgba(000,075,124,1);
     border: 3px rgba(255,234,058,1) solid;
   }
-    
+
   .drawer .blurb a {
     color: rgba(026,010,008,1);
     border-bottom: 3px solid rgba(255,234,058,1);
@@ -494,13 +464,38 @@ header .logo {
     padding: .15em;
     padding-bottom: 0em;
   }
-  
+
   .drawer .blurb a:hover {
     background-color: rgba(255,234,058,1);
     transition: background-color 0.33s ease;
   }
 }
 
+@media (min-width: 60rem) {
+  header .logo {
+    margin-left: 20%;
+    width: 20%;
+  }
+
+  header h1.wordmark {
+    top: 35%;
+    left: -2%;
+  }
+
+  header .mission {
+    transform: rotate(-8.25deg);
+    top: 8%;
+    right: 5%;
+    width: 500px;
+  }
+}
+
+@media (min-width: 65rem) {
+  header h1.wordmark {
+    font-size: 3rem;
+    left: 0;
+  }
+}
 /** neon sign will really glow!!!! **/
 /*
 svg.logo {
@@ -568,6 +563,10 @@ These are some styles related to the crazy homepage solution Connor and Kristian
   position: absolute;
 }
 
+.imged .bigBlock p {
+  display: none;
+}
+
 .imged .bigBlock h1 {
   text-transform: uppercase;
   top: 3%;
@@ -585,6 +584,12 @@ These are some styles related to the crazy homepage solution Connor and Kristian
   background-color: rgba(26,42,53,.25);
 }
 
+@media (min-width: 60rem) {
+  .imged .bigBlock p {
+    display: block;
+  }
+}
+
 /**
 NOTES AND HELP:
 - look into this more: http://www.smashingmagazine.com/2011/08/23/the-semantic-grid-system-page-layout-for-tomorrow/
@@ -600,11 +605,6 @@ NOTES AND HELP:
 - http://jxnblk.com/react-fitter-happier-text/
 **/
 
-/* Centering in the unknown */
-/* from http://css-tricks.com/centering-in-the-unknown/
-  ---------------------------------------------------------*/
-
-
 /** slideshow? **/
 .cycle-slideshow,
 .cycle-slideshow .item {
@@ -614,6 +614,10 @@ NOTES AND HELP:
 .cycle-slideshow .item {
   position: relative;
   height: auto;
+  margin-bottom: 1.5rem;
+}
+.cycle-slideshow .item:last-of-type {
+  margin-bottom: 0;
 }
 
 .item.cycle-slide.cycle-slide-active {
@@ -626,6 +630,8 @@ NOTES AND HELP:
   right:0;
   bottom: 0;
   left: 0;
+  /**/
+  display: none;
 }
 
 .prevControl,
@@ -653,6 +659,15 @@ NOTES AND HELP:
 
 .nextControl {
   right: -1.5rem;
+}
+
+@media (min-width: 800px) {
+  .cycle-slideshow .item {
+    margin-bottom: 0;
+  }
+  .controls {
+    display: block;
+  }
 }
 
 /** footer **/
