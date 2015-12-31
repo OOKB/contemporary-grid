@@ -56,11 +56,22 @@
 .bt3            { border-top: 3px solid; }
 .bb3            { border-bottom: 3px solid; }
 
+/** positioning **/
+.static   { position: static; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed    { position: fixed; }
+
+.list-reset {
+  padding-left: 0;
+  list-style: none;
+}
+
 /** hidden/visible **/
 /* Visibility Classes */
 .show           { display: block !important; }
 .hidden         { display: none !important; }
-.invisible      { visibility: hidden; }
+.invisible      { visibility: hidden; } /* doesn't show up, but does still live in the DOM */
 
 .visible-lg,
 .visible-60em,

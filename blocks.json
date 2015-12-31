@@ -1,34 +1,36 @@
 {
   "blocks": [
     {
-      "title": "Block 1",
-      "blurb": "something......",
+      "title": "Grit Fund",
+      "blurb": "The Grit Fund supports unincorporated and collaborative artist-organized activity that contributes significantly to Baltimore’s arts landscape but seldom qualifies for traditional funding.",
       "url": "#page1",
-      "image": "tk"
+      "image": "img/gritfund2.jpg",
+      "bg-color": "red",
+      "big": true
     },
     {
-      "title": "Block 2",
-      "blurb": "anything......",
+      "title": "Donate!",
+      "blurb": "We rely on your donation to keep our operation up and running! …",
       "url": "#page2",
-      "image": "tk"
+      "bg-color": "orange"
     },
     {
-      "title": "Block 3",
-      "blurb": "something else......",
+      "title": "Membership",
+      "blurb": "Our members are crucial to the overall health of the museum. …",
       "url": "#page3",
-      "image": "tk"
+      "bg-color": "yellow"
     },
     {
-      "title": "Block 4",
-      "blurb": "another, different thing......",
+      "title": "Archive",
+      "blurb": "We commission site-specific and subject-oriented projects that exist in public space …",
       "url": "#page4",
-      "image": "tk"
+      "bg-color": "darkgreen"
     },
     {
-      "title": "Block 5",
-      "blurb": "lorem ipsum dolor sit amet......",
+      "title": "Scroll",
+      "blurb": "Scroll is an annual publication that is produced entirely by our intern staff. …",
       "url": "#page4",
-      "image": "tk"
+      "bg-color": "blue"
     }
   ]
 }

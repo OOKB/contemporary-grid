@@ -140,40 +140,16 @@
               <div class="item">
                 <div class="inner tile imged bg-red">
                     <a href="" class="bigBlock">
-                        <h1>This will be a slideshow</h1>
-                        <p>A little blurb for each slide...</p>
+                        <h1>Seed these with something</h1>
+                        <p>Something that doesn't go out of date incase of a JS failure.</p>
                     </a>
                 </div>
               </div>
               <div class="item">
                 <div class="inner tile imged bg-orange">
                     <a href="" class="bigBlock">
-                        <h1>This will be a slideshow</h1>
-                        <p>A little blurb for each slide...</p>
-                    </a>
-                </div>
-              </div>
-              <div class="item">
-                <div class="inner tile imged bg-yellow">
-                    <a href="" class="bigBlock">
-                        <h1>This will be a slideshow</h1>
-                        <p>A little blurb for each slide...</p>
-                    </a>
-                </div>
-              </div>
-              <div class="item">
-                <div class="inner tile imged bg-darkgreen">
-                    <a href="" class="bigBlock">
-                        <h1>This will be a slideshow</h1>
-                        <p>A little blurb for each slide...</p>
-                    </a>
-                </div>
-              </div>
-              <div class="item">
-                <div class="inner tile imged bg-blue">
-                    <a href="" class="bigBlock">
-                        <h1>This will be a slideshow</h1>
-                        <p>A little blurb for each slide...</p>
+                        <h1>Seed these with a different thing ...</h1>
+                        <p>Something that doesn't go out of date incase of a JS failure.</p>
                     </a>
                 </div>
               </div>
@@ -181,10 +157,10 @@
               <script id="slide-item" type="text/x-mustache-template">
               {{#slideshow}}
                 <div class="item">
-                  <div class="inner tile imged" style="background-image:url({{image}});">
+                  <div class="inner tile imged bg-black" style="background-image:url({{image}});">
                     <a href="{{url}}" class="bigBlock">
                       <h1>{{title}}</h1>
-                      <p>{{blurb}}</p>
+                      <p>{{{blurb}}}</p>
                     </a>
                   </div>
                 </div>
@@ -199,46 +175,57 @@
 
           </div>
 
-          <div class="six columns">
-              <div class="inner tile imged bg-black gritfund">
-                  <a href="#gritfund" class="bigBlock">
-                      <h1>Grit Fund</h1>
-                      <p>A little blurb of some sort of text...</p>
+          <section id="lower-blocks">
+            <div class="six columns">
+                <div class="inner tile imged bg-black gritfund">
+                    <a href="/gritfund/" class="bigBlock">
+                        <h1>Grit Fund</h1>
+                        <p>The Grit Fund supports unincorporated and collaborative artist-organized activity … </p>
+                    </a>
+                </div>
+            </div>
+            <div class="three columns">
+                <div class="inner tile imged bg-yellow">
+                    <a href="/support/donate/" class="bigBlock">
+                        <h1>Donate!</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="three columns">
+                <div class="inner tile imged bg-darkgreen">
+                    <a href="/projects/archive/" class="bigBlock">
+                        <h1>Archive</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="three columns">
+                <div class="inner tile imged bg-lightgreen">
+                    <a href="/about/#history" class="bigBlock">
+                        <h1>History</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="three columns">
+                <div class="inner tile imged bg-blue">
+                    <a href="/projects/speakerseries/" class="bigBlock">
+                        <h1>Speaker Series</h1>
+                    </a>
+                </div>
+            </div>
+
+            <script id="block-item" type="text/x-mustache-template">
+            {{#blocks}}
+              <div class="{{#big}}six{{/big}}{{^big}}three{{/big}} columns">
+                <div class="inner tile imged bg-{{bg-color}}" {{#image}}style="background-image:url({{image}});"{{/image}}{{^image}}{{/image}}>
+                  <a href="{{url}}" class="bigBlock">
+                    <h1>{{title}}</h1>
+                    <p>{{{blurb}}}</p>
                   </a>
+                </div>
               </div>
-          </div>
-          <div class="three columns">
-              <div class="inner tile imged bg-yellow">
-                  <a href="" class="bigBlock">
-                      <h1>Talking Shop</h1>
-                      <p>2015 Speaker Series</p>
-                  </a>
-              </div>
-          </div>
-          <div class="three columns">
-              <div class="inner tile imged bg-darkgreen">
-                  <a href="" class="bigBlock">
-                      <h1>Archive</h1>
-                      <p>A longer blurb of some sort of text... trying to make this more flexible.</p>
-                  </a>
-              </div>
-          </div>
-          <div class="three columns">
-              <div class="inner tile imged bg-lightgreen">
-                  <a href="" class="bigBlock">
-                      <h1>A title</h1>
-                      <p>A longer blurb of some sort of text. These will be list-y kind of tiles, or else paragraphy/quote-y tiles.</p>
-                  </a>
-              </div>
-          </div>
-          <div class="three columns">
-              <div class="inner tile imged bg-blue">
-                  <a href="" class="bigBlock">
-                      <h1>Speaker Series</h1>
-                      <p>A longer blurb of some sort of text...</p>
-                  </a>
-              </div>
-          </div>
+            {{/blocks}}
+            </script>
+          </section>
         </div>
 
       </div>
@@ -295,6 +282,12 @@
         console.log( "You now have the contents for a slideshow, next to get it to work." );
 
         $("#slideshow-wrap").cycle("destroy");
+        /*
+          the only way I could get this to work properly was to initialize
+          the slideshow with placeholder content, replace the content with
+          new stuff, then destroy the old SS and start a new one...
+          http://jquery.malsup.com/cycle2/api/#commands for more help
+        */
         $("#slideshow-wrap").cycle({
           fx: "slideHorz",
           timeout: 50000,
@@ -302,9 +295,18 @@
           next: ".nextControl",
           slides: "> div.item"
         });
-
       });
+    </script>
 
+    <script>
+      /** the stuff for printing the lower blocks out **/
+      $.getJSON('blocks.json', function(data) {
+        console.log( "block success" );
+        var template = $('#block-item').html();
+        var info = Mustache.to_html(template, data);
+        $('#lower-blocks').html(info);
+        console.log( "You now have some lower blocks." );
+      });
     </script>
 
     <script>

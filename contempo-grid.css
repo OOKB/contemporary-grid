@@ -104,17 +104,17 @@ h6 { font-size: 1.33rem; }
 
 header h1.wordmark {
 /*    font-size: 1.5rem;*/
-    position: absolute;
-    transform: rotate(-5.625deg);
-    top: 35%;
-    left: 2%;
-    /**/
-    color: rgba(250,252,255,1);
-    background-color: rgba(000,075,124,1);
+  position: absolute;
+  transform: rotate(-5.625deg);
+  top: 35%;
+  left: 2%;
+  /**/
+  color: rgba(250,252,255,1);
+  background-color: rgba(000,075,124,1);
 /*    padding: .5rem;*/
-    padding: 1rem;
-    z-index: 9999;
-  }
+  padding: 1rem;
+  z-index: 9999;
+}
 
 p {
   margin-top: 0;
@@ -225,16 +225,6 @@ img { max-width: 100%; }
   content: '';
   display: table;
   clear: both;
-}
-
-.static   { position: static; }
-.relative { position: relative; }
-.absolute { position: absolute; }
-.fixed    { position: fixed; }
-
-.list-reset {
-  padding-left: 0;
-  list-style: none;
 }
 
 /****************************************************/
@@ -490,10 +480,10 @@ header .logo {
     right: 5%;
     width: 500px;
   }
-    
+
   header .mission p {
-    color: rgba(000,075,124,1); 
-    border: 3px rgba(255,234,058,1) solid;   
+    color: rgba(000,075,124,1);
+    border: 3px rgba(255,234,058,1) solid;
   }
 }
 

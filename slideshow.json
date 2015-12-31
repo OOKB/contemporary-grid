@@ -7,26 +7,26 @@
       "image": "img/HappyNewYear1.gif"
     },
     {
-      "title": "Slide 2",
-      "blurb": "anything......",
+      "title": "Speaker Series …",
+      "blurb": "Our annual Speaker Series, which is held at the Baltimore School for the Arts, features internationally-recognized artists, critics, and art professionals. Each year the theme shifts to reflect contemporary practices and trends. All lectures are free and open to the public.",
       "url": "#page2",
       "image": "img/tile_1.jpg"
     },
     {
-      "title": "Slide 3",
-      "blurb": "something else......",
+      "title": "Scroll",
+      "blurb": "<em>Scroll</em> is an annual publication that is produced entirely by our intern staff. Each issue of Scroll explores a different cultural topic related to the mission and efforts of the museum and is available, for free, in print and online.",
       "url": "#page3",
       "image": "img/tile_2.jpg"
     },
     {
-      "title": "Slide 4",
-      "blurb": "another, different thing......",
+      "title": "Projects",
+      "blurb": "We commission site-specific and subject-oriented projects that exist in public space and are in collaboration with artists and existing arts and non-arts institutions, organizations, sites, and spaces. All projects are free and open to the public.",
       "url": "#page4",
       "image": "img/tile_3.jpg"
     },
     {
-      "title": "Slide 5",
-      "blurb": "lorem ipsum dolor sit amet......",
+      "title": "Archives",
+      "blurb": "We have nearly 30 years of projects — see some of our old ones.",
       "url": "#page5",
       "image": "img/tile_4.jpg"
     }
