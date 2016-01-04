@@ -224,6 +224,24 @@ img { max-width: 100%; }
 /****************************************************/
 /****************************************************/
 
+/** Typography? **/
+
+main a,
+.drawer .blurb a {
+  background-color: transparent;
+  border-bottom: 3px solid rgba(255,234,058,1);
+  color: rgba(026,010,008,1);
+  padding: .15em .15em 0;
+  text-decoration: none;
+  transition: all 400ms;
+}
+
+main a:hover,
+.drawer .blurb a:hover {
+  background-color: rgba(255,234,058,1);
+}
+
+
 /* columnar stuff */
 #wrapper,
 .wrapper,
@@ -469,19 +487,6 @@ header.internal #main-menu-wrap {
     border: 3px rgba(255,234,058,1) solid;
   }
 
-  .drawer .blurb a {
-    color: rgba(026,010,008,1);
-    border-bottom: 3px solid rgba(255,234,058,1);
-    box-sizing: border-box;
-    text-decoration: none;
-    padding: .15em;
-    padding-bottom: 0em;
-  }
-
-  .drawer .blurb a:hover {
-    background-color: rgba(255,234,058,1);
-    transition: background-color 0.33s ease;
-  }
 }
 
 @media (min-width: 60rem) {
@@ -742,14 +747,15 @@ section img {
 }
 
 .toggle .bio p {
-    background: rgba(250,252,255,1);
-    margin: 0;
-    position: absolute;
-    z-index: 9;
-    padding: 1rem;
-    margin-left: -12.5rem;
-    width: 25rem;
-    left: 50%;
+  background: rgba(250,252,255,1);
+  margin: 0;
+  position: absolute;
+  z-index: 9;
+  padding: 1rem;
+  margin-left: -12.5rem;
+  width: 25rem;
+  left: 50%;
+  box-shadow: 0 10px 20px -10px rgba(26,42,53,.4);
 }
 
 .email {
