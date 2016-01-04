@@ -409,13 +409,17 @@ header .logo {
   position: absolute;
 }
 
-header h1.wordmark {
+header.home h1.wordmark {
   font-size: 2rem;
   position: absolute;
   transform: rotate(-5.625deg);
   z-index: 9999;
   top: 6.125rem;
   left: 5rem;
+}
+
+header.internal h1 {
+  font-size: 1rem;
 }
 
 @media (min-width: 50rem) {
@@ -427,14 +431,14 @@ header h1.wordmark {
     position: static;
   }
 
-  header h1.wordmark,
+  header.home h1.wordmark,
   header .mission {
     position: absolute;
     z-index: 99;
     transition: all 400ms;
   }
 
-  header h1.wordmark {
+  header.home h1.wordmark {
     transform: rotate(5.625deg);
     top: 35%;
     left: 42.5%;
@@ -477,7 +481,7 @@ header h1.wordmark {
     width: 20%;
   }
 
-  header h1.wordmark {
+  header.home h1.wordmark {
     top: 35%;
     left: -2%;
   }
@@ -491,7 +495,7 @@ header h1.wordmark {
 }
 
 @media (min-width: 65rem) {
-  header h1.wordmark {
+  header.home h1.wordmark {
     font-size: 3rem;
     left: 0;
   }
