@@ -491,7 +491,6 @@ header.internal #main-menu-wrap {
     border: 3px rgba(255,234,058,1) solid;
   }
 
-<<<<<<< HEAD
   .drawer .blurb a {
     color: rgba(026,010,008,1);
     border-bottom: 3px solid rgba(255,234,058,.75);
@@ -505,9 +504,6 @@ header.internal #main-menu-wrap {
     background-color: rgba(255,234,058,.75);
     transition: background-color 0.33s ease;
   }
-=======
->>>>>>> origin/master
-}
 
 @media (min-width: 60rem) {
   header .logo {
