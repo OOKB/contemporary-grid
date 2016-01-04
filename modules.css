@@ -67,6 +67,11 @@
   list-style: none;
 }
 
+/* miscellany */
+.img-circle {
+    border-radius: 50%;
+}
+
 /** hidden/visible **/
 /* Visibility Classes */
 .show           { display: block !important; }
