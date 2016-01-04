@@ -13,7 +13,7 @@
   </head>
   <body class="bg-white">
 
-    <header>
+    <header class="home">
       <div class="container">
         <div class="group">
 
@@ -179,7 +179,7 @@
             <div class="six columns">
                 <div class="inner tile imged bg-black gritfund">
                     <a href="/gritfund/" class="bigBlock">
-                        <h1>Grit Fund</h1>
+                        <h2>Grit Fund</h2>
                         <p>The Grit Fund supports unincorporated and collaborative artist-organized activity … </p>
                     </a>
                 </div>
@@ -187,38 +187,42 @@
             <div class="three columns">
                 <div class="inner tile imged bg-yellow">
                     <a href="/support/donate/" class="bigBlock">
-                        <h1>Donate!</h1>
+                        <h2>Donate!</h2>
+                        <p>The Grit Fund supports unincorporated and collaborative artist-organized activity … </p>
                     </a>
                 </div>
             </div>
             <div class="three columns">
                 <div class="inner tile imged bg-darkgreen">
                     <a href="/projects/archive/" class="bigBlock">
-                        <h1>Archive</h1>
+                        <h2>Archive</h2>
+                        <p>The Grit Fund supports unincorporated and collaborative artist-organized activity … </p>
                     </a>
                 </div>
             </div>
             <div class="three columns">
                 <div class="inner tile imged bg-lightgreen">
                     <a href="/about/#history" class="bigBlock">
-                        <h1>History</h1>
+                        <h2>History</h2>
+                        <p>The Grit Fund supports unincorporated and collaborative artist-organized activity … </p>
                     </a>
                 </div>
             </div>
             <div class="three columns">
                 <div class="inner tile imged bg-blue">
                     <a href="/projects/speakerseries/" class="bigBlock">
-                        <h1>Speaker Series</h1>
+                        <h2>Speaker Series</h2>
+                        <p>The Grit Fund supports unincorporated and collaborative artist-organized activity … </p>
                     </a>
                 </div>
             </div>
-
+              
             <script id="block-item" type="text/x-mustache-template">
             {{#blocks}}
               <div class="{{#big}}six{{/big}}{{^big}}three{{/big}} columns">
                 <div class="inner tile imged bg-{{bg-color}}" {{#image}}style="background-image:url({{image}});"{{/image}}{{^image}}{{/image}}>
                   <a href="{{url}}" class="bigBlock">
-                    <h1>{{title}}</h1>
+                    <h2>{{title}}</h2>
                     <p>{{{blurb}}}</p>
                   </a>
                 </div>
