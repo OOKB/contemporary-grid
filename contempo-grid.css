@@ -238,7 +238,8 @@ img { max-width: 100%; }
 .group,
 .grouped,
 .row {
-  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* columnar stuff */
