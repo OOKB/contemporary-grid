@@ -569,7 +569,8 @@ These are some styles related to the crazy homepage solution Connor and Kristian
 /*Slight overlay to allow for white text*/
 
 .imged a {
-  background-color: rgba(26,42,53,.18);
+  background-color: rgba(26,42,53,0);
+  border: none;
   text-decoration: none;
   display: block;
   position: absolute;
@@ -678,6 +679,12 @@ NOTES AND HELP:
 
 .item.cycle-slide.cycle-slide-active {
   visibility: visible;
+}
+
+.cycle-slideshow .item h1,
+.cycle-slideshow .item h2,
+.cycle-slideshow .item p {
+  display: none;
 }
 
 .controls {
