@@ -442,7 +442,7 @@ header.home h1.wordmark {
 }
 
 /* inside pages have a slightly different header */
-header.internal {
+header.internal > .container {
   padding-top: .25rem;
 }
 header.internal h1 {
@@ -454,6 +454,19 @@ header.internal #main-menu-wrap {
 }
 
 @media (min-width: 50rem) {
+  header.internal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+  }
+
+  body { padding-top: 90px; }
+  header.internal > .container {
+    background: rgba(250,252,255,1);
+  }
+
   header .logo {
     margin-top: .75rem;
     margin-left: 25%;
