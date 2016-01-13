@@ -694,10 +694,19 @@ NOTES AND HELP:
   visibility: visible;
 }
 
+/*
 .cycle-slideshow .item h1,
 .cycle-slideshow .item h2,
-.cycle-slideshow .item p {
+*/
+.cycle-slideshow .item p.blurb {
   display: none;
+}
+
+.cycle-slideshow .item blockquote {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 1em;
 }
 
 .controls {

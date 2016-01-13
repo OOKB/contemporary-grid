@@ -160,10 +160,17 @@
               <script id="slide-item" type="text/x-mustache-template">
               {{#slideshow}}
                 <div class="item">
-                  <div class="inner tile imged bg-black" style="background-image:url({{image}});">
+                  <div class="inner tile imged {{#bg-color}}bg-{{bg-color}}{{/bg-color}}{{^bg-color}}bg-black{{/bg-color}}" style="background-image:url({{image}});">
                     <a href="{{url}}" class="bigBlock">
                       <h1>{{title}}</h1>
-                      <p>{{{blurb}}}</p>
+                      <p class="blurb">{{{blurb}}}</p>
+                      {{#quote}}
+                        <div class="bigQuote">
+                          <blockquote>{{quote}}</blockquote>
+                          <p class="byline lead m0 mb1">— {{byline}}</p>
+                          {{#extra}}<p class="extra small m0">{{extra}}</p>{{/extra}}
+                        </div>
+                      {{/quote}}
                     </a>
                   </div>
                 </div>
