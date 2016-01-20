@@ -7,10 +7,10 @@
     <title>The Contemporary (A nomadic, non-collecting art museum in Baltimore, Maryland.)</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href="contempo-grid.css" rel="stylesheet" type="text/css" />
-    <link href="modules.css" rel="stylesheet" type="text/css" />
-    <link href="menu.css" rel="stylesheet" type="text/css" />
-    <link href="sponsors.css" rel="stylesheet" type="text/css" />
+    <link href="/css/contempo-grid.css" rel="stylesheet" type="text/css" />
+    <link href="/css/modules.css" rel="stylesheet" type="text/css" />
+    <link href="/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="/css/sponsors.css" rel="stylesheet" type="text/css" />
   </head>
   <body class="bg-white" id="homepage">
 
@@ -20,8 +20,8 @@
 
           <h1 class="wordmark pull-left m0">The Contemporary</h1>
 
-          <div class="social pull-right text-right m0">
-            <a href="https://www.facebook.com/thecontemporarymuseum" class="darkblue"><i class="fa fa-facebook-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-instagram fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-twitter-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-tumblr-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-vimeo-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-youtube-square fa-lg"></i></a>
+          <div class="pull-right text-right">
+            <p class="small m0">Baltimore, MD</p>
           </div>
         </div>
 
@@ -135,25 +135,25 @@
             c0.5-2.1,2.6-3.5,4.7-3c2.1,0.5,3.5,2.6,3,4.7c-8.1,36.8-24.8,65.6-49.6,85.6C224.4,347.8,192.8,358,155.2,358z"/>
             </svg>
 
+            <div class="bottom-block">
+              <div class="inner tile imged bg-lightgreen">
+                <a href="/resources/artist-retreat/" class="bigBlock">
+                  <h2>Artist Retreat</h2>
+                </a>
+              </div>
+            </div>
+
           </div>
 
           <div class="nine columns">
             <div id="slideshow-wrap" class="cycle-slideshow">
               <!-- this will be a slideshow? -->
               <div class="item">
-                <div class="inner tile imged bg-red">
-                    <a href="" class="bigBlock">
-                        <h1>Seed these with something</h1>
-                        <p>Something that doesn't go out of date incase of a JS failure.</p>
-                    </a>
-                </div>
-              </div>
-              <div class="item">
-                <div class="inner tile imged bg-orange">
-                    <a href="" class="bigBlock">
-                        <h1>Seed these with a different thing ...</h1>
-                        <p>Something that doesn't go out of date incase of a JS failure.</p>
-                    </a>
+                <div class="inner tile imged bg-black" style="background-image:url(/img/ghostfood.jpg);">
+                  <a href="/projects/ghostfood/" class="bigBlock">
+                    <h1>GhostFood</h1>
+                    <p class="blurb"></p>
+                  </a>
                 </div>
               </div>
 
@@ -184,7 +184,8 @@
             </div>
 
           </div>
-
+        </div>
+        <div class="group">
           <section id="lower-blocks">
             <div class="six columns">
                 <div class="inner tile imged bg-black gritfund">
@@ -290,7 +291,7 @@
     <!-- This actually takes the menu.json data and prints it into the site -->
     <script>
       /** the stuff for printing things out **/
-      $.getJSON('menu.json', function(data) {
+      $.getJSON('/json/menu.json', function(data) {
         console.log( "Menu success" );
         var template = $('#menu-drawers').html();
         var info = Mustache.to_html(template, data);
@@ -303,7 +304,7 @@
 
     <script>
       /** the stuff for printing the dynamic slideshow out **/
-      $.getJSON("slideshow.json", function(data) {
+      $.getJSON("/json/slideshow.json", function(data) {
         console.log( "SS success" );
         var template = $("#slide-item").html();
         var info = Mustache.to_html(template, data);
@@ -353,7 +354,7 @@
 
     <script>
       /** the stuff for printing the lower blocks out **/
-      $.getJSON('blocks.json', function(data) {
+      $.getJSON('/json/blocks.json', function(data) {
         console.log( "block success" );
         var template = $('#block-item').html();
         var info = Mustache.to_html(template, data);
