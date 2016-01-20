@@ -81,6 +81,16 @@
   list-style: none;
 }
 
+a.no-style {
+  color: inherit !important;
+  text-decoration: none;
+}
+a.no-style:hover {
+  color: inherit !important;
+  text-decoration: none;
+}
+
+
 /* miscellany */
 .img-circle {
     border-radius: 50%;
