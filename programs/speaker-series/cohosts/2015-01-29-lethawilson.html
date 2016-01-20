@@ -9,10 +9,10 @@
     <title>The Contemporary : CoHosts</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="/css/vbs/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/legit.css" rel="stylesheet">
-    <link href="css/newfooter.css" rel="stylesheet">
+    <link href="/css/vbs/legit.css" rel="stylesheet">
+    <link href="/css/vbs/newfooter.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -256,12 +256,12 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/ookb_for_tc.js"></script>
+    <script src="/js/vbs/bootstrap.min.js"></script>
+    <script src="/js/vbs/ookb_for_tc.js"></script>
 
     <script>
       // print out menu automatically for these pages...
-      $.getJSON('json/speakermenu.json', function(data) {
+      $.getJSON('/json/vbs/speakermenu.json', function(data) {
         $.each(data.speakermenu, function(data) {
           $('ul#speakermenu').append('<li class="' + this["type"] + '"><a href="' + this["url"] + '">' + this["speaker"] + ' // ' + this["gallery"] + '</a></li>');
         });
