@@ -12,6 +12,7 @@
     <link href="/css/menu.css" rel="stylesheet" type="text/css" />
     <link href="/css/sponsors.css" rel="stylesheet" type="text/css" />
   </head>
+
   <body class="bg-white" id="homepage">
 
     <header class="internal">
@@ -136,7 +137,7 @@
 
             <div class="contact-info text-center clear">
               <h3>The Contemporary Shop</h3>
-              <p class="lead">Coming Soon...</p>
+              <p class="lead" id="shopTxt">Coming Soon...</p>
             </div>
           </article>
         </div>
@@ -194,9 +195,11 @@
         var info = Mustache.to_html(template, data);
         $('#main-menu-wrap').html(info);
         console.log( "You now have a menu." );
-
       });
+    </script>
 
+    <script>
+      $('#shopTxt').load('shop.txt');
     </script>
 
     <script>
