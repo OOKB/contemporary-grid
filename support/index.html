@@ -114,6 +114,7 @@
 
         <article id="donate" class="pad-top">
           <h1>Support.</h1>
+          <h2>Donate.</h2>
           <div class="row">
             <section class="five columns">
               <p class="lead">The Contemporary relies on your donation to keep our operation up and running!</p>
@@ -160,14 +161,40 @@
         <article  class="pad-top add-bottom border-top">
           <section id="membership">
             <h2>Membership</h2>
+            <div class="group mb4">
+              <p class="six columns" id="membershipTxt"></p>
+              <div class="six columns">
+                <div class="group">
+                  <div class="six columns">
+                    <div class="inner tile imged bg-blue">
+                        <a href="#indMember" class="bigBlock">
+                          <h2>Individual Membership</h2>
+                          <p>$$$$</p>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="six columns">
+                    <div class="inner tile imged bg-darkgreen">
+                        <a href="#teamMember" class="bigBlock">
+                          <h2>Team Membership</h2>
+                          <p>$$$$</p>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
+        </article>
+        <article  class="pad-top add-bottom border-top">
           <section id="wishlist">
             <h2>Wishlist</h2>
+            <p class="six mb4" id="wishlistTxt"></p>
           </section>
         </article>
 
         <article id="supporters" class="pad-top add-bottom border-top">
-          <h1>Supporters.</h1>
+          <h2>Supporters.</h2>
           <p>We are immeasurably grateful to those who have made contributions in support of our operations and programming.</p>
 
           <div class="row">
@@ -421,7 +448,8 @@
     </script>
 
     <script>
-      $('#shopTxt').load('shop.txt');
+      $('#membershipTxt').load('membership.txt');
+      $('#wishlistTxt').load('wishlist.txt');
     </script>
 
     <script>
