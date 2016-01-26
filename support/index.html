@@ -165,9 +165,11 @@
               <div class="six columns">
                 <p id="membershipTxt"></p>
                 <p>
-                  <a href="#individual" class="button">Learn more about Individual Membership</a> <a href="#team" class="button">Learn more about Team Membership</a>
+                  <a href="#individual" id="indTxt" class="button">Learn more about Individual Membership</a> <a href="#team" id="teamTxt" class="button">Learn more about Team Membership</a>
                 </p>
-                <p id="current-membership"><small>Clicking either of the above would render their "features" into the DOM right here!</small></p>
+                <div id="current-membership" class="mt1 mb2">
+                  <small>Clicking either of the above would render their "features" into the DOM right here!</small>
+                </div>
                 <p>
                   Already a member? <a href="TK" class="button">Login here</a>
                 </p>
@@ -507,6 +509,14 @@
     <script>
       $('#membershipTxt').load('membership.txt');
       $('#wishlistTxt').load('wishlist.txt');
+      $('#indTxt').click(function(e) {
+        e.preventDefault();
+        $('#current-membership').load('individual.txt');
+      });
+      $('#teamTxt').click(function(e) {
+        e.preventDefault();
+        $('#current-membership').load('team.txt');
+      });
     </script>
 
     <script>
