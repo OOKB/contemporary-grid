@@ -870,3 +870,14 @@ section img {
 .email .small {
   font-size: .85em;
 }
+
+/** membership mockup **/
+form.membership,
+form.membership label {
+  display: block;
+}
+
+form.membership .input-group:hover {
+  background-color: rgba(245, 250, 255, .75);
+  color: darkblue;
+}
