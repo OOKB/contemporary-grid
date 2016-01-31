@@ -425,7 +425,11 @@ svg.logo .c {
   fill: rgba(241,97,74,1);
 }
 
+.logo-wrapper { display: none; }
+
 @media (min-width: 60em) {
+.logo-wrapper { display: block; }
+
   main .logo-wrapper .logo {
     width: 90%;
     margin-left: -1.5rem;

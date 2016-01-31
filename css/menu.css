@@ -10,7 +10,6 @@
 */
 
 header {
-  height: 450px;
 }
 
 #main-menu-wrap {
@@ -18,11 +17,6 @@ header {
   border-top-style: solid ;
   border-bottom-style: solid ;
   z-index: 99999;
-  /**/
-  position: absolute;
-  top: 9rem;
-  right: .75rem;
-  width: calc(100% - 180px);
   background-color: rgba(250,252,255,1);
 }
 
