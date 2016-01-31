@@ -439,34 +439,20 @@ svg.logo .c {
 
 /*TESTING SIZING ON THE SKINNY VIEW*/
 
-header .logo {
-  width: 200px;
-  position: absolute;
-}
-
-header.home h1.wordmark {
-  font-size: 2rem;
-  position: absolute;
-  transform: rotate(-5.625deg);
-  z-index: 9999;
-  top: 6.125rem;
-  left: 5rem;
-}
-
 /* inside pages have a slightly different header */
-header.internal > .container {
+header > .container {
   padding-top: .25rem;
 }
-header.internal h1 {
+header h1 {
   font-size: 1rem;
   padding-top: .25rem;
 }
-header.internal #main-menu-wrap {
+header #main-menu-wrap {
   margin-top: .25rem;
 }
 
 @media (min-width: 50rem) {
-  header.internal {
+  header {
     position: fixed;
     top: 0;
     right: 0;
@@ -475,45 +461,8 @@ header.internal #main-menu-wrap {
   }
 
   body { padding-top: 90px; }
-  header.internal > .container {
+  header > .container {
     background: rgba(250,252,255,1);
-  }
-
-  header .logo {
-    margin-top: .75rem;
-    margin-left: 25%;
-    width: 20%;
-    height: auto;
-    position: static;
-  }
-
-  header.home h1.wordmark,
-  header .mission {
-    position: absolute;
-    z-index: 99;
-    transition: all 400ms;
-  }
-
-  header.home h1.wordmark {
-    transform: rotate(5.625deg);
-    top: 35%;
-    left: 42.5%;
-    /**/
-    color: rgba(250,252,255,1);
-    background-color: rgba(000,075,124,1);
-    padding: 1rem;
-  }
-
-  header .mission {
-    transform: rotate(-8.25deg);
-    top: 8%;
-    right: 5%;
-    width: 500px;
-  }
-
-  header .mission p {
-    color: rgba(000,075,124,1);
-    border: 3px rgba(255,234,058,1) solid;
   }
 
   .drawer .blurb a {
@@ -531,31 +480,6 @@ header.internal #main-menu-wrap {
   }
 }
 
-@media (min-width: 60rem) {
-  header .logo {
-    margin-left: 20%;
-    width: 20%;
-  }
-
-  header.home h1.wordmark {
-    top: 35%;
-    left: -2%;
-  }
-
-  header .mission {
-    transform: rotate(-8.25deg);
-    top: 8%;
-    right: 5%;
-    width: 500px;
-  }
-}
-
-@media (min-width: 65rem) {
-  header.home h1.wordmark {
-    font-size: 3rem;
-    left: 0;
-  }
-}
 /** neon sign will really glow!!!! **/
 /*
 svg.logo {
